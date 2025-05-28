@@ -1,0 +1,8 @@
+- Funcionalidad de un todo, puede tener sub cosas.
+- No es una documentacion, es un sub cosas realmente
+	- Y cada sub cosa puede tener una sub cosa.
+	- Infinite nesting.
+	- Luce muy cool
+	- TODO Hasta otro todo?
+	-
+-

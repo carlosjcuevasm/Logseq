@@ -1,0 +1,15 @@
+- Star ocean 2 *****
+- Chrono crosss ****
+- Final Fantasy tactics ***
+- Rebus ***
+- -
+- Suikoden *****
+-
+- Esfuerzate:
+- Suikoden I
+-
+-
+-
+- Digimon World 3 **
+- Saga Frontier 2
+-

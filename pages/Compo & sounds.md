@@ -1,0 +1,12 @@
+# Compo & sounds
+- [[Compo basics]]                — fundamental theory & workflow
+- [[Compo software]]              — DAWs, plugins, score tools
+- [[Sequencing]]                  — VGM, pop, EDM, “my stuff,” etc.
+- [[Piano]]                       — technique, repertoire
+- [[Keyboard]]                    — synths, organs, setups
+- [[DJ]]                          — gear, mixing, sets
+- [[Singing basics]]              — vocal technique
+- [[Rapping basics]]              — flow, writing
+- [[…]]                           — add more as you go
+- [[DAW App]]
+-

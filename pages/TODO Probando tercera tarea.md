@@ -1,0 +1,13 @@
+- DOING Probando tercera tarea
+  :LOGBOOK:
+  CLOCK: [2025-05-07 Wed 12:43:35]--[2025-05-07 Wed 12:43:36] =>  00:00:01
+  CLOCK: [2025-05-07 Wed 13:27:39]
+  :END:
+	- Funcionalidad de un todo, puede tener sub cosas.
+	- No es una documentacion, es un sub cosas realmente
+		- Y cada sub cosa puede tener una sub cosa.
+		- Infinite nesting.
+		- Luce muy cool
+		- TODO Hasta otro todo?
+		-
+	-

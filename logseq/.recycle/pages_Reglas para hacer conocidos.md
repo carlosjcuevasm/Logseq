@@ -1,0 +1,10 @@
+- **Escenarios:**
+- Sentada en mesa
+- Parada haciedno cosas
+- Caminando hacia destino
+- Buscando cosas mismo lugar
+- Caminando hacia ti
+- Lejos haciendo cosas
+- Sentada
+-
+- co
