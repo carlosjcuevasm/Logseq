@@ -1,0 +1,36 @@
+- Composition based software
+- Composable, data-first, end-user programmable software built from primitives
+- You’re **building a tool out of ideas** and exposing that to end users too.
+- State machine and stateful and lifecycle
+- streams, events, command pallete
+- objects
+- Expose the underline architecture, lets users assemble stuff
+- Small primitives → infinite recombination.
+-
+- They are **environments**.
+	- Reaper is not “a DAW”, it’s a **signal-routing environment**
+	- VS Code is not “an editor”, it’s a **language workbench**
+	- Logseq is not “a notes app”, it’s a **knowledge substrate**
+- That’s why they feel “thoughtful”.
+-
+- Logseq / Reaper / VS Code are:
+	- **Primitive-first**
+	- **Loosely coupled**
+	- **User-assembled**
+- That’s why you feel:
+- > “I could build anything here”
+- Because you actually can.
+-
+- Because your **life model is graph-based**:
+	- nodes
+	- relations
+	- views
+	- states
+- You don’t want:
+	- fixed categories
+	- forced workflows
+- You want:
+	- primitives
+	- freedom
+	- meaning to emerge from structure
+- So naturally, you’re drawn to tools built this way.

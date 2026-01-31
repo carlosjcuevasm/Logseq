@@ -1,0 +1,2 @@
+- https://www.reddit.com/r/discordapp/comments/sjo703/discord_in_a_corporate_business_setting_our/
+-

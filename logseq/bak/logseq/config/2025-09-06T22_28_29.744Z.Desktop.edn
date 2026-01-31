@@ -1,5 +1,9 @@
 {:meta/version 1
+;; only show scheduled tasks due today
+:scheduled/future-days 0
 
+ 
+ 
  ;; Set the preferred format.
  ;; Available options:
  ;; - Markdown (default)
@@ -10,7 +14,7 @@
  ;; Available options:
  ;; - :now for NOW/LATER style (default)
  ;; - :todo for TODO/DOING style
- :preferred-workflow :now
+ :preferred-workflow :todo
 
  ;; Exclude directories/files.
  ;; Example usage:
@@ -299,7 +303,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["Inbox"]
+ :favorites ["ps1 osts order" "Compo basics" "Earthbound OST cover" "Biz and Code stuff" "TO-DO" "que-hacer" "Defense" "Leisure tasks" "Inbox"]
 
  ;; Set flashcards interval.
  ;; Expected value:
@@ -420,4 +424,5 @@
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
  :graph/settings {:builtin-pages? true
- :journal? false}}
+ :journal? false}
+ :feature/enable-journals? true}

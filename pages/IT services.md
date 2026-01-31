@@ -1,0 +1,12 @@
+- [[CMS]]
+-
+- Depends on team number and need, to mix and match and better solution ie
+	- Solamente email hosting, por 1 dolar en namecheap etc teams? mejor MS con email hosting etc even when slack or better yet fremiun discord is available, or google workspace, zulip, etc
+- domain
+- [[Email Hosting]]
+- [[Team Comunication]]
+- office docs
+-
+- website (presentation, functional), apps
+- AI?
+-

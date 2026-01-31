@@ -1,0 +1,114 @@
+-
+- ## **Life-operating system** for Provision / Expression / Recovery.
+- **Time-scaled control system**:
+	- **Backlog** - All items you know about. Intentions, ideas, topics. Refined or not.  This is the inventory of nodes.
+		- [[Nodes Backlog]]
+	- **Pack / Monthly planning** - Prioritization happens. What the main goals for the month are. Active builds and why them to anchor meaning
+		- [[Monthly planning]]
+	- **Sprint review and planning** - Responds to the current goals, commitment window. Working items in packages, 2-week (or similar). Also Completed + % progress
+		- [[Sprint planning]]
+	- **Weekly planning** — Weekly,  load management. This reflects sprint goals, now made a specific week intent.
+		- [[Weekly planning]]
+	- **Kanban. Work item tracker**  — Main tool for knowing what is committed to work on. Sprint scope. A state machine for items with overall view. Results form the sprint planning. Pending / Working / Done.
+		- [[Kanban board]]
+	- **Daily agenda** — Daily organizer, what to do today. What to take in work items. Might just be Journals page.
+		- {{journal}}
+	- ---
+	- **Reasoning:** Each step fragments the big goal
+	  collapsed:: true
+		- Monthly → sets direction and meaning
+		  Sprint  → selects commitments
+		  Kanban  → tracks state of commitments
+		  Weekly  → balances load
+		  Daily   → executes
+	- ---
+- Remember, is a life operating model. Thus, managing commitments under uncertainty.
+- #### Fun facts
+	- This is "Agile" methodology
+	  collapsed:: true
+		- | Scrum Concept | Your Life System |
+		  | --- | --- |
+		  | Product backlog | Nodes Backlog |
+		  | Product vision | Provision / Expression / Recovery |
+		  | Sprint goal | Monthly + Sprint planning |
+		  | Sprint backlog | Kanban |
+		  | Daily standup | Daily agenda (journal) |
+		  | Sprint review | Sprint review + % |
+		  | Sprint retrospective | Weekly planning reflection |
+		  So yes — structurally, this **is Agile**.
+		  Without forcing it, I just rediscovered Agile. Kanban as a tool made it extremly apparent.
+		  It all started after the life as node system and how to organize work on it
+	- Why this actually works
+	  collapsed:: true
+		- The system:
+			- forces prioritization
+			- fragmented workload by layers
+			- makes commitment explicit
+			- limits active work
+	- This is life, thus value some and not some
+	  collapsed:: true
+		-
+		- explicitly modeled:
+			- Recovery
+			- drain vs restore
+			- load,
+		- **didn’t** introduce:
+			- velocity obsession
+			- story points theater
+			- daily guilt tracking
+	- If life is a node graph, use tools sharing that concept
+		- Logseq is a "everything is a node" approach.
+			- It has only two first-class things: Pages and Blocks
+			  collapsed:: true
+				- For instance a tag is simply a type of relation. A page that you link to, with intent of classification.
+				  collapsed:: true
+					- A tag is not a separate object. When you "signal" something as `x`, you are literally linking this block/page to the page `x`.
+					  collapsed:: true
+						- A tag itself is a self-contained node, as everything else.
+						- How is this done
+						  collapsed:: true
+							- When you write:
+							- ```
+							  `This is interesting #fun-fact`
+							  ```
+							- Logseq does this:
+								- Creates (or links to) a **page** called `fun-fact`
+								- The current block becomes a **reference** to that page
+							- So:
+								- `#fun-fact` ≡ `[[fun-fact]]`
+								- No difference semantically
+							- You can open the `fun-fact` page and:
+								- Define it
+								- Write what “fun fact” means
+								- Add related notes
+								- See **all blocks/pages that reference it**
+							-
+				- A property can be thought as a named relation. It is the same primitive as a tag (a link to a page), but scoped under a named semantic role.
+					- This allow for interesting features, like a labeling system
+						- > complexity:: 1 
+						  priority:: 3
+						- Even if you never visit the `complexity` page, it still exists as a node and can be defined, queried, or extended later. Maybe you never go to the "complexity" page, but if you wish to see it, it does exist
+					- A property collects many relations under one shared semantic meaning. In essence, is acts as a namespace. Is the concept of tag, just lifted one level up into a named  group of relations.
+			- You can template stuff
+			  collapsed:: true
+				- **Templates** → copy/paste automation
+				- **Placeholders** → visual hints only
+				- **Macros** → rendering / computed views
+				- **Nothing is “interactive” in core Logseq**
+		- Tips for written documentation
+		  collapsed:: true
+			- Writing primitives
+			  collapsed:: true
+				- Use punctuation for flow.
+				- Use line breaks for readability.
+				- Use blocks for structure.
+				- Use nesting for dependency.
+			- Advice
+			  collapsed:: true
+				- Use sentences for flow and readability
+				  Use blocks to expose structure and intent
+				- Over-blocking destroys narrative, narrative fragmentation.
+				  Under-blocking hides structure.
+-
+-
+-

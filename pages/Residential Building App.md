@@ -1,0 +1,4 @@
+- Task Management: Tracking and visualizing ongoing issues, maintenance tasks, and resident-reported problems (e.g., using Kanban boards). Selective view of task depending on user permissions. Recurrent tasks like building maintenance.
+- Accounting: Managing monthly payments, bills, utilities, account balances, savings visibility, and automatic reminders for late payments.
+- Tenant Communication: Mass notifications to residents, reminders, and optional integrated messaging/chat.
+- Security / Visitor Management (optional): QR-code-based visitor access and verification by guards.

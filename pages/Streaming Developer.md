@@ -1,0 +1,58 @@
+- You’re noticing something important.
+- the modern pillar model looks like:
+	- Frontend
+	- Backend
+	- **Time-based systems (streams, events, schedulers)**
+- Engineers who can reason across **all three** are rare — and that’s where senior pay bands live.
+- A clean way to think about **modern “business software” engineering** today is this:
+	- **Front end** → how humans interact with the system
+	- **Back end** → rules, orchestration, persistence, APIs
+	- **Data streams** → how the system reacts _over time_ and _at scale_
+- That third pillar didn’t used to be explicit. Now it is.
+- A clearer framing:
+	- **Frontend**
+		- UI, UX, dashboards, internal tools
+		- Optimized for **latency, clarity, and usability**
+	- **Backend**
+		- Business logic, workflows, permissions, databases
+		- Optimized for **correctness, consistency, and change**
+	- **Data streaming / event systems**
+		- Kafka, Kinesis, Flink, queues, schedulers, real-time pipelines
+		- Optimized for **time, flow, state, and resilience**
+- Why this matters:
+	- Companies don’t just _store_ data anymore — they **react to it**
+	- Ads, recommendations, fraud, analytics, personalization, automation
+	- That reaction happens through **streams**, not request/response APIs
+- This is why:
+	- “Streaming” roles pay more
+	- “Real-time” shows up in job descriptions everywhere
+	- Systems thinking > CRUD thinking
+- And here’s the key insight for _you_:
+- You already operate in the **third pillar**.
+-
+- **Short, clear summary**
+	- “Streaming” job titles often mean **data streaming** (Kafka, Kinesis, Flink), not **media streaming** (HLS, FAST, SSAI)
+	- These roles pay well because real-time data pipelines are critical for **AI, ads, analytics, and connected devices**
+	- You don’t currently have direct Kafka-style experience, so a full pivot now would reset seniority
+	- Your skills are **adjacent** (real-time systems, state, timing, reliability), not unrelated
+	- Best move: **don’t pivot hard** — gradually add data-streaming skills on top of your media streaming profile
+	- This lets you target higher-paying **media + real-time data** roles without starting over
+	- If you want, I can map your FAST / Channel Engine experience directly to Kafka concepts in one page
+	  ---
+- **Concise summary, mapped to your work**
+	- **Streams vs events**
+		- You already handle continuous playback streams made of discrete events (segments, manifest updates)
+	- **Time windows**
+		- You work with start/end times, wall-clock scheduling, and dynamic window extension (JIT mode)
+	- **Stateful systems**
+		- You manage live state (current event, override vs schedule, in-memory vs persisted state)
+	- **Backpressure thinking**
+		- You design fallbacks (asset manager, slate) to handle gaps or missing inputs
+	- **Real-time reliability**
+		- Your systems must always output something and switch immediately without blocking
+	- **Producer / consumer model**
+		- Schedulers and APIs produce decisions; Channel Engine and players consume them
+		  
+		  ---
+- **Bottom line**
+	- You already have the *streaming systems mindset* — applied to media instead of Kafka-style data streams

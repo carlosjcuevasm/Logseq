@@ -1,58 +1,125 @@
-- **[[Biz and Code stuff]]**
-- Brochure websites services
-- Content (news & blogs) websites services
-- User archive website services
-- SAP like services
-  
-  **[[Compo & sounds stuff]]** 
-  -compo basics
-  -- basics of musics
-  -- liked songs song form describe
-  -compo software
-  --tone js clone
-  --Reaper+caustic+mpc60 app
-  -sequencing (vgm, pop,edm, mystuf etc)
-  -piano
-  -keyboard
-  -DJ
-  -singing basics
-  -rapping basics
-- etc
-  
-  **[[Documentacion stuff]]**
-  -vids basics
-  -My templates
-  -creative
-  -storystelling basics
-- etc
-  
-  **[[Food stuff]]**
-- My cookbook
-- Kitchen basics
-- Home crops
-- etc
-  Care & Health stuff
-  -Apparel
-  
-  **[[Home & city stuff]]**
-- Apartment improve
-- Apartment cleaning
-- Car maintenance
-- Art, Books, videogames & storytelling stuff
-- Books
-- Classic film movies
-- Classic anime movies
-- Classic anime series
-- Classic nes,snes,sega,turbo,ps1,n64 games
-  
-  [[Dating]]
-  
-  
-  **[[Finance stuff]]**
-- invest assets
-- trading?
-  
-  **[[History & Economics stuff]]**
-- Key people study
-- Key books read
-- History reading
+- 24h
+- 8h sleep
+- 8h work (6h40 output + 1h20 nourishing downtime)
+- 3h maintenance (meals, hygiene, home) (40m downtime?)
+- /#k
+- ~2h downtime
+- 5h left
+- {{renderer :kanban_6966c89c-e228-47be-81cc-05e246aa396f}}
+-
+-
+- {{renderer :kanban_6979a1ef-856d-49f5-a704-bf68229ff77b}}
+	- data
+		- Backlog
+			- item 0
+		- column 1
+			- item 1
+		- column 2
+			- item 3
+			- item 4
+		- column 3
+			- item 5
+-
+- Defenses:framework de llevar dia + revisar notas
+- cosas de work, gym,  musica - finacnes, actividades nuevas -  ropita, dating,  apto, cooking
+-
+- piano
+- soccer
+- bailar
+- plantas hidroponicas
+- surivviel stuff: sogas, esto lo otro,
+- encurtidos
+- Lavadora como usar
+- hola
+-
+-
+-
+- [[Defenses]]
+- [[Documentacion stuff]]
+  collapsed:: true
+	- TODO Vids basics #doc
+	- TODO My templates #doc
+	- TODO Creative #doc
+	- TODO Storytelling basics #doc
+	- TODO Etc. #doc
+-
+- [[Biz and Code stuff]]
+  collapsed:: true
+	- TODO Brochure websites services #code
+	- TODO Content (news & blogs) websites services #code
+	- TODO User archive website services #code
+	- TODO SAP-like services #code
+- [[Finance stuff]]
+  collapsed:: true
+	- TODO Invest assets #finance
+	- TODO Trading? #finance
+	- TODO Budget review #finance
+	- TODO Savings goals #finance
+- [[Compo & sounds stuff]]
+  collapsed:: true
+	- TODO Compo basics #compo
+		- TODO Basics of music #compo
+		- TODO Describe liked songs’ form #compo
+	- TODO Compo software #compo
+		- TODO Tone.js clone #compo
+		- TODO Reaper + Caustic + MPC60 app #compo
+	- TODO Sequencing (vgm, pop, edm, “mystuf,” etc.) #compo
+	- TODO Piano #compo
+	- TODO Keyboard #compo
+	- TODO DJ #compo
+	- TODO Singing basics #compo
+	- TODO Rapping basics #compo
+	- TODO Etc. #compo
+- [[Care & Health, Looks]]
+  collapsed:: true
+	- TODO Apparel #health
+	- TODO Exercise routine #health
+	- TODO Medical check-ups #health
+	- TODO Self-care habits #health
+- [[Fitness & Sports]]
+  collapsed:: true
+	- TODO Workout plan #fitness
+	- TODO Grooming routine #fitness
+	- TODO Skin care #fitness
+	- TODO Etc. #fitness
+- [[Home & city stuff]]
+  collapsed:: true
+	- TODO Apartment improvement #home
+	- TODO Apartment cleaning #home
+	- TODO Car maintenance #home
+	- TODO Local errands #home
+	- TODO Etc. #home
+-
+- [[Food stuff]]
+  collapsed:: true
+	- TODO My cookbook #cook
+	- TODO Kitchen basics #cook
+	- TODO Home crops #cook
+	- TODO Etc. #cook
+- [[Exploring world]]
+- [[Art, Books, videogames & storytelling stuff]]
+  collapsed:: true
+	- TODO Books to read #art
+	- TODO Classic film movies #art
+	- TODO Classic anime movies #art
+	- TODO Classic anime series #art
+	- TODO Classic NES, SNES, Sega, Turbo, PS1, N64 games #art
+	- TODO Story ideas #art
+	- TODO Etc. #art
+-
+- [[Dating]]
+  collapsed:: true
+	- TODO Approaching #dating
+	- TODO Apps #dating
+	- TODO Flirting #dating
+	- TODO Date follow-ups #dating
+- [[Social Life]]
+  collapsed:: true
+-
+- [[History & Economics stuff]]
+  collapsed:: true
+	- TODO Key people study #history
+	- TODO Geography and cities #history
+	- TODO Key books read #history
+	- TODO History reading #history
+	- TODO Economic trends #history

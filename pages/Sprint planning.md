@@ -1,0 +1,19 @@
+## Log
+	- ## Sprint Planning – {{placeholder:Start Date → End Date}}
+		- ### Monthly Context
+			- ((697d33d4-13c9-4da6-94cc-bdd9f179b548))
+			- ((100fbd0e-2511-4e36-a2bd-289cf0b93784))
+		- ### Sprint Intent
+			- {{placeholder:Sprint intent (derived from monthly theme)}}
+		- ### Sprint Commitments
+			- [[{{placeholder:Work item 1}}]]
+			- [[{{placeholder:Work item 2}}]]
+			- [[{{placeholder:Work item 3}}]]
+			- etc
+		- ### Feedback (fill at end of sprint)
+			- **What moved forward:**
+				- {{placeholder:Observation}}
+			- **What stalled or was heavier than expected:**
+				- {{placeholder:Observation}}
+			- **Adjustments for next sprint:**
+				- {{placeholder:Adjustment}}

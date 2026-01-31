@@ -1,0 +1,7 @@
+- In essence a CMS is a specialized server that manages content for any front‑end client.
+- Front ends—with role‑based access—hit its endpoints to fetch and show or update content. Editors can either work through the CMS’s built‑in admin UI or wire up their own front end so they can create and edit right alongside the live site.
+- Under the hood, a CMS gives you data modeling (articles, categories, tags, profiles, PDFs or any custom type) on top of a database, plus rich media handling—text, images (or image URLs), videos (or video links), profile pics, documents and more.
+- By bundling authentication, permissions, endpoint management and media workflows into one reusable service, any content‑driven app—news portals, e‑commerce catalogs, lab result platforms, training dashboards, forums—can plug in without reinventing the wheel. That’s exactly why the CMS pattern emerged and why the CMS was born.
+- ![image.png](../assets/image_1753246419041_0.png)
+-
+-

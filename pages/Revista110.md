@@ -1,3 +1,13 @@
+- TODO mejor vista email dialog en mobile #code #biz #cnt
+- TODO enlace a periodico
+- TODO div de anuncios
+- TODO chatbots
+- TODO revistas carusel y ver anterioires
+- TODO completa cntmedia web
+- TODO respalda code bases en github origin
+-
+-
+-
 -
 -
 - {{query (and [[revista110]] (task TODO DOING))}}

@@ -1,0 +1,88 @@
+- [[Nodes tools]]
+-
+- Got it. Ultra-simple, no extra structure.
+  Here’s a **clean, concise summary of what *you* said**, nothing added.
+  
+  ---
+- ### Core idea
+  
+  Everything that can be acknowledged as “something” is a **node**.
+  
+  Topics, projects, interests, needs, goals, habits — all are nodes.
+  There is no real difference between them.
+  
+  ---
+- ### Nodes & relationships
+- Nodes can relate to **multiple other nodes**
+- There is **no single hierarchy**
+- Grouping is contextual, not absolute
+  
+  A node like *hydroponics* can relate to:
+- Food
+- Home décor
+- Recovery
+  Each with different **degrees of relevance**
+  
+  ---
+- ### Weights instead of categories
+  
+  Relationships between nodes can be **weighted**:
+- 0 → no relation
+- 0.5 → some relation
+- 1 → helps
+- 1.5 → strongly helps
+- 2 → belongs
+  
+  This avoids forcing things into one box.
+  
+  ---
+- ### Human needs as core nodes
+  
+  At minimum, human life stabilizes around **three domains**:
+- **Provision** – material viability, continuity, external value
+- **Expression** – identity, agency, meaning, interest
+- **Recovery** – health, energy, nervous system sustainability
+  
+  Everything touches all three to some degree.
+  
+  ---
+- ### Meaning
+  
+  Meaning comes from **knowing why a node exists in your life**.
+  Humans feel better when effort clearly matters.
+  
+  Reframing necessary things positively is **correct framing**, not self-deception.
+  
+  ---
+- ### Modes
+  
+  Any node can be in one of two modes:
+- **Build** – effortful, draining, capacity-creating
+- **Sustain** – stable, often restoring
+  
+  Imbalance is normal short-term. Stability matters long-term.
+  
+  ---
+- ### Energy over time
+  
+  Life is not time management but **energy management**.
+  Some nodes drain energy, others restore it.
+  
+  Expression:
+- drains when beginner or evaluative
+- restores when fluent
+- drains again under pressure
+  
+  ---
+- ### No false distinctions
+  
+  Topics, projects, interests, goals — these are **states of nodes**, not different kinds of things.
+  
+  All nodes are **actionable**, at least potentially.
+  
+  ---
+  
+  That’s the model.
+  No optimization. No moral scoring. Just clarity.
+  
+  <!--EndFragment-->
