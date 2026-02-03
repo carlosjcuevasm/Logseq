@@ -1,4 +1,5 @@
 - Every category is **same intent expressed from different angles**.
+  id:: 697d200e-9240-472f-a45b-7a95f3d77bc0
   collapsed:: true
 	- **Theme** = the _direction / emphasis_ of the month
 	- **Goals** = what you’re trying to _move forward_
@@ -48,7 +49,7 @@
 				-
 				-
 			-
-- Only **Goals** is mandatory. Everything else is **supporting structure**.
+- Only **Goals** is mandatory. Everything else is **supporting structure**, thus **optional**.
 - This is a **monthly count** fragmentation.  Might be each month, or 2 counts etc.
   collapsed:: true
 	- A layer of cycle planning, just as others, like sprint or weekly etc just upper in layer
@@ -57,6 +58,7 @@
 - ## Log
 	- ## Monthly Planning – February 2026
 	  id:: 697d33d4-13c9-4da6-94cc-bdd9f179b548
+	  collapsed:: true
 		- ### Theme
 			- Retomar provision, definir expresiones tc darlee
 			  id:: 100fbd0e-2511-4e36-a2bd-289cf0b93784
@@ -93,3 +95,43 @@
 		- ### Notes
 		  collapsed:: true
 			- {{placeholder:Note}}
+	- ## February-2026
+	  id:: 6980fc47-91f4-4c3c-a7a8-3b323beef550
+	  collapsed:: true
+	  Control sobre lo que me importa
+		- ### Theme plea
+			- Si quiero ser feliz, necesito perseguirme a mi y mis deseos reales.
+		- ### Goals
+			- ### Provision
+				- **Goal:** {{placeholder:Goal}}
+					- **Why:** {{placeholder:Why}}
+					- **Success looks like:** 
+					  {{placeholder:Success looks like}}
+			- ### Expression
+			  collapsed:: true
+				- **Goal:** {{placeholder:Goal}}
+					- **Why:** {{placeholder:Why}}
+					- **Success looks like:** 
+					  {{placeholder:Success looks like}}
+			- ### Recovery
+			  collapsed:: true
+				- **Goal:** {{placeholder:Goal}}
+					- **Why:** {{placeholder:Why}}
+					- **Success looks like:** 
+					  {{placeholder:Success looks like}}
+		- ### Constraints
+		  collapsed:: true
+			- **Focus Areas:** 
+			  {{placeholder:Provision > Expression · Recovery non-negotiable}}
+			- **Scope:** 
+			  {{no new projects · no side quests}}
+			- **Load:**
+			  {{max 2 cognitively heavy tasks/day · no back-to-back heavy days}}
+			- **Time:**
+			  {{work ≤ 7pm weekdays · light weekends only}}
+			- **Quality:**
+			  {{progress > completeness · good enough > perfect}}
+		- ### Notes
+		  collapsed:: true
+			- {{placeholder:Note}}
+-

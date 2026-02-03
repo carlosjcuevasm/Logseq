@@ -1,0 +1,48 @@
+## Items
+	- ## mirad
+		- **pack:** [[{{placeholder:work pack (optional)}}]]
+		- **Priority:**
+		- **Time Est (hrs):**
+		- **Cognitive Load:**
+			-
+		- **Success (this sprint):**
+			-
+		- **Topics relation:**
+			-
+		- **Notes:**
+			-
+		- **Sprint:** [[{{placeholder:Sprint Planning – dates}}]]
+		- **Type:** work-item, work
+	- ## Ir al gym
+	  type::work-item, work
+		- **Topics relation:**
+		- **Work pack:**
+		- **Priority:**
+		- **Time Est (hrs):**
+		- **Cognitive Load:**
+		- **Success (this sprint):**
+		- **Notes:**
+		- **Sprint:**
+	- ## hacer la vaina
+	  type::work-item, work
+		- **Notes:**
+		- **Topics relation:**
+		- **Work pack:**
+		- **Priority:**
+		- **Time Est (hrs):**
+		- **Cognitive Load:**
+		- **Success (this sprint):**
+		- **Sprint:**
+- /pu
+- /
+- /
+- ## Gym pull
+-
+- ## Gym pull
+	- **Notes:**jdjdd
+	- **Topics relation:**
+	- **Work pack:**
+	- **Priority:**
+	- **Time Est (hrs):** 1h
+	- **Cognitive Load:** 1
+-

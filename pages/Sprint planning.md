@@ -1,9 +1,11 @@
-## Log
-	- ## Sprint Planning – {{placeholder:Start Date → End Date}}
+- Here please explain each category make it simple as in [monthly planning legend](697d200e-9240-472f-a45b-7a95f3d77bc0)
+- Only **Sprint Commitments** is mandatory. Everything else is **supporting structure**, thus **optional**.
+-
+- ## Log
+	- ## Sprint Planning – [[Feb 1st, 2026]]- [[Feb 12th, 2026]]
 		- ### Monthly Context
-			- ((697d33d4-13c9-4da6-94cc-bdd9f179b548))
-			- ((100fbd0e-2511-4e36-a2bd-289cf0b93784))
-		- ### Sprint Intent
+			- ((6980fc47-91f4-4c3c-a7a8-3b323beef550))
+		- ### Intent
 			- {{placeholder:Sprint intent (derived from monthly theme)}}
 		- ### Sprint Commitments
 			- [[{{placeholder:Work item 1}}]]
@@ -17,3 +19,4 @@
 				- {{placeholder:Observation}}
 			- **Adjustments for next sprint:**
 				- {{placeholder:Adjustment}}
+-

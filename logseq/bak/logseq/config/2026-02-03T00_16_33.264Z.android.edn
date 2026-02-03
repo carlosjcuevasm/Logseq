@@ -303,7 +303,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["Life system" "Nodes tools" "Business Digitalization / Operational Enablement" "Social Life" "Ps1 OSTs order" "Cosas" "IT services" "compo basics" "earthbound ost cover" "biz and code stuff" "doing" "to-do" "que-hacer" "defense" "leisure tasks" "inbox"]
+ :favorites ["Nodes tools" "Business Digitalization / Operational Enablement" "Social Life" "Ps1 OSTs order" "Cosas" "IT services" "compo basics" "earthbound ost cover" "biz and code stuff" "doing" "to-do" "que-hacer" "defense" "leisure tasks" "inbox"]
 
  ;; Set flashcards interval.
  ;; Expected value:

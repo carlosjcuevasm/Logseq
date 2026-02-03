@@ -1,11 +1,25 @@
+- Todas lo que importa y haces en la vida, es y/o puede ser un nodo, clasificable.
+  Aquí un sistema para tomar control, tener una vida mas deseada. 
+  Que todo lo que realmente importa, tenga excelente oportunidad de suceder.
+  Ser mas completo, ser mas coherente, 
+  ser mas tu, ser mas feliz.
 -
-- ## **Life-operating system** for Provision / Expression / Recovery.
+-
+- ## **Life-operating system**
+  for Provision / Expression / Recovery.
+- The system strategy
+  collapsed:: true
+	- What makes it _not_ just a task list is that **each layer narrows the pool differently**.
+	- Steps
+		- fragmenting time
+		- pulling items from a pool
+		- committing progressively (month → sprint → week → day)
 - **Time-scaled control system**:
 	- **Backlog** - All items you know about. Intentions, ideas, topics. Refined or not.  This is the inventory of nodes.
-		- [[Nodes Backlog]]
+		- [[Items Backlog]]
 	- **Pack / Monthly planning** - Prioritization happens. What the main goals for the month are. Active builds and why them to anchor meaning
 		- [[Monthly planning]]
-	- **Sprint review and planning** - Responds to the current goals, commitment window. Working items in packages, 2-week (or similar). Also Completed + % progress
+	- **Sprint review and planning** - Is a commitment to items window . Respond to the monthly goals. Working items in packages, 2-week (or similar). Also Completed + % progress
 		- [[Sprint planning]]
 	- **Weekly planning** — Weekly,  load management. This reflects sprint goals, now made a specific week intent.
 		- [[Weekly planning]]
@@ -45,45 +59,58 @@
 			- fragmented workload by layers
 			- makes commitment explicit
 			- limits active work
-	- This is life, thus value some and not some
-	  collapsed:: true
-		-
-		- explicitly modeled:
-			- Recovery
-			- drain vs restore
-			- load,
-		- **didn’t** introduce:
-			- velocity obsession
-			- story points theater
-			- daily guilt tracking
-	- If life is a node graph, use tools sharing that concept
+	- If life is a node graph, use tools sharing that concept.
+		- Probably a **low-level environment**
+		  collapsed:: true
+			- A **low-level environment** gives basics:
+				- primitives (pages, blocks, links, tags)
+				- composition instead of prescription
+				- _no assumed workflow_
+			- It does **not** assume pipelines:
+				- what you’re building
+				- why you’re building it
+				- how work should flow
+			- You assemble meaning yourself.
+			- Environments give you _building blocks_.
+			  Workflows give you _paths_
+			- Logseq and Notion both fall into this category.
 		- Logseq is a "everything is a node" approach.
-			- It has only two first-class things: Pages and Blocks
-			  collapsed:: true
-				- For instance a tag is simply a type of relation. A page that you link to, with intent of classification.
-				  collapsed:: true
-					- A tag is not a separate object. When you "signal" something as `x`, you are literally linking this block/page to the page `x`.
+			- It does all with "primitives"
+				- It has only two **first-class** things: **Pages and Blocks**
+				  That’s why it feels powerful instead of restrictive.
+					- Pages and blocks are almost the same thing. 
+					  A **page is a bock that got it's own file** to exist. Both can hold same capacity for content
+					  This means a page has addressability outside Logseq. Is a top level block, etc
+					  Pages feel “heavier” (navigation, namespaces, titles), Blocks feel “lighter” (thoughts, items, structure)
+				- pages = nodes
+				- links = relationships
+				- templates = structure
+				- kanban/query = views
+			- Features like tags or properties etc are made using the primitives
+				- They are essentially parsed, indexed metadata. 
+				  By using the designated symbols, you let Logseq know those should be parsed. Is usefull for quereis, filters etc
+				- Tags: not a separate object. When you "signal" something as `x`, you are literally linking this block/page to the page `x`.
+					- A tag itself is a self-contained node, as everything else.
+					- How is this done
 					  collapsed:: true
-						- A tag itself is a self-contained node, as everything else.
-						- How is this done
-						  collapsed:: true
-							- When you write:
-							- ```
-							  `This is interesting #fun-fact`
-							  ```
-							- Logseq does this:
-								- Creates (or links to) a **page** called `fun-fact`
-								- The current block becomes a **reference** to that page
-							- So:
-								- `#fun-fact` ≡ `[[fun-fact]]`
-								- No difference semantically
-							- You can open the `fun-fact` page and:
-								- Define it
-								- Write what “fun fact” means
-								- Add related notes
-								- See **all blocks/pages that reference it**
-							-
-				- A property can be thought as a named relation. It is the same primitive as a tag (a link to a page), but scoped under a named semantic role.
+						- When you write:
+						- ```
+						  `This is interesting #fun-fact`
+						  ```
+						- Logseq does this:
+							- Creates (or links to) a **page** called `fun-fact`
+							- The current block becomes a **reference** to that page
+						- So:
+							- `#fun-fact` ≡ `[[fun-fact]]`
+							- No difference semantically
+						- You can open the `fun-fact` page and:
+							- Define it
+							- Write what “fun fact” means
+							- Add related notes
+							- See **all blocks/pages that reference it**
+						-
+				- Property: can be thought as a named relation. It is the same primitive as a tag (a link to a page), but scoped under a named semantic role.
+				  collapsed:: true
 					- This allow for interesting features, like a labeling system
 						- > complexity:: 1 
 						  priority:: 3
@@ -109,6 +136,16 @@
 				  Use blocks to expose structure and intent
 				- Over-blocking destroys narrative, narrative fragmentation.
 				  Under-blocking hides structure.
+	- This is life, thus value some and not some
+	  collapsed:: true
+		- explicitly modeled:
+			- Recovery
+			- drain vs restore
+			- load,
+		- **didn’t** introduce:
+			- velocity obsession
+			- story points theater
+			- daily guilt tracking
 -
 -
 -

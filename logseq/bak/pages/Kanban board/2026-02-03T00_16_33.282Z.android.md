@@ -1,0 +1,5 @@
+- {{renderer :kanbandnd_697a9740-02aa-4e9b-970a-4a964075ad22}}
+	- Pending
+	- Working
+		- Terminar tools Defenses nodes #Defenses
+	- Done
