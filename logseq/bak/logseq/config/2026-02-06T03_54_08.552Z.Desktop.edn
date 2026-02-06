@@ -1,9 +1,9 @@
 {:meta/version 1
-;; only show scheduled tasks due today
-:scheduled/future-days 0
+ ;; only show scheduled tasks due today
+ :scheduled/future-days 0
 
- 
- 
+
+
  ;; Set the preferred format.
  ;; Available options:
  ;; - Markdown (default)
@@ -14,7 +14,7 @@
  ;; Available options:
  ;; - :now for NOW/LATER style (default)
  ;; - :todo for TODO/DOING style
- :preferred-workflow :todo
+ :preferred-workflow :now
 
  ;; Exclude directories/files.
  ;; Example usage:
@@ -269,7 +269,7 @@
  ;; input "{{poem red,blue}}"
  ;; becomes
  ;; Rose is red, violet's blue. Life's ordered: Org assists you.
- :macros {}
+ :macros {:journal "{{embed <%today%>}}"}
 
  ;; Configure the default expansion level for linked references.
  ;; For example, consider the following block hierarchy:
@@ -303,7 +303,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["Nodes tools" "Business Digitalization / Operational Enablement" "Social Life" "Ps1 OSTs order" "Cosas" "IT services" "compo basics" "earthbound ost cover" "biz and code stuff" "doing" "to-do" "que-hacer" "defense" "leisure tasks" "inbox"]
+ :favorites ["Life system" "Nodes tools" "Business Digitalization / Operational Enablement" "Social Life" "Ps1 OSTs order" "Cosas" "IT services" "compo basics" "earthbound ost cover" "biz and code stuff" "doing" "to-do" "que-hacer" "defense" "leisure tasks" "inbox"]
 
  ;; Set flashcards interval.
  ;; Expected value:
@@ -424,9 +424,11 @@
  ;;      ;use Percent-encoding for other invalid characters
  :file/name-format :triple-lowbar
  :graph/settings {:builtin-pages? true
- :journal? false}
+                  :journal? false}
  :feature/enable-journals? true
- :preferred-format :markdown}
+ :preferred-format :markdown
+ :journal/page-title-format "E, dd-MM-yyyy"}
 
-;; Custom macros
-:journal "{{embed <%today%>}}"
+ :task/markers
+ {:todo ["NOW" "LATER" "WAIT"]
+  :done ["DONE"]}

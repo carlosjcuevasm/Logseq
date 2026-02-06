@@ -39,8 +39,8 @@ div.ls-block[data-refs-self*="work-"] .block-properties
 
 
 /* Hide the query builder bar (Live query + blue pills), keep results */
-.ls-block:not(.is-editing) .cp__query-builder,
-.ls-block:not(.is-editing) .th {
-  display: none !important;
-  
+.ls-block:not(:hover):not(.is-editing) .cp__query-builder,
+.ls-block:not(:hover):not(.is-editing) .th {
+  visibility: hidden;
+
 }

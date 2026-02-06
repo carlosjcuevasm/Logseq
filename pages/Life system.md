@@ -1,4 +1,21 @@
 - [[Nodes tools]]
+-
+-
+- ***Define your thinking, then map tools to it*** (You're lucky)
+  collapsed:: true
+	- Usualmente es dificil porque las herramientas vienen dadas con tus decisiones... tuve suerte con la era PKM
+	- People usually: pick a tool, inherit a workflow, fight it quietly....
+	- Yo
+		- defined meaning
+		- derived structure
+		- evaluated tools honestly
+		- stopped when friction outweighed value
+		- **That’s mature systems thinking.** + algo de tiempo.... (2 weeks)
+	- Whether you stay with Logseq for everything, or offload execution to a kanban app later—you didn’t waste time. You built something **you understand**.
+-
+- Me di cuenta que, necesitas un [Life model]([[Life System]]) (**las unidades**) y un [Control system]([[Nodes tools]]) (**como progresarlas**)
+- Model + Control System
+-
 - ### Core idea
   
   Everything that can be acknowledged as “something” is a **node**.
@@ -7,6 +24,7 @@
   There is no real difference between them.
 -
 - Node as objects as in programing. You can have **types** of nodes, thus **classes**.
+  collapsed:: true
 	- Nodes can have **properties** or **attributes** etc (these also nodes if necessary) . This helps define the intended usage of the node
 	- Thus, with this possibility, the feature of **work items, topics, classification** etc, based on the types of prop they own.
 	- Some types of nodes

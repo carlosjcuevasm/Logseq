@@ -19,7 +19,7 @@ div.ls-block[data-refs-self*="work-"] .block-properties
 }
 
 .ls-block:has(.block-marker.TODO) {
-  background: #26262b;
+  background: #1d1d20;
   border-radius: 6px;
   padding: 6px;
   margin:10px 0px;
@@ -39,8 +39,7 @@ div.ls-block[data-refs-self*="work-"] .block-properties
 
 
 /* Hide the query builder bar (Live query + blue pills), keep results */
-.ls-block:not(.is-editing) .cp__query-builder,
-.ls-block:not(.is-editing) .th {
+.ls-block:not(:hover):not(.is-editing) .cp__query-builder,
+.ls-block:not(:hover):not(.is-editing) .th {
   display: none !important;
-  
 }

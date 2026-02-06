@@ -1,4 +1,4 @@
-# Item Management Templates
+# Item Management Templates------------
 - **Goal:**
   template:: monthly-goal
   collapsed:: true
@@ -47,32 +47,43 @@
 			-
 		- **Adjustments for next sprint:**
 			-
-- ## name
+- ## TODO WKI-
   template:: work-item
-  type::work-item, work
-  collapsed:: true
+  WorkPack:: ((69811fe2-b84b-4787-a1f5-6e8c4deaf988)) 
+  #work-item
 	- **Notes:**
-	- **Topics relation:**
-	- **Work pack:**
-	- **Priority:**
-	- **Time Est (hrs):**
-	- **Cognitive Load:**
-	- **Success (this sprint):**
-	- **Sprint:**
-- ## name
+	  collapsed:: true
+		- **Why**:
+	- **Disciplines:**
+	- **More:**
+	  collapsed:: true
+		- **Priority:**
+		- **Time Est (hrs):**
+		- **Cognitive Load:**
+		- **Success:**
+		- **Sprint:**
+- ## TODO WKP-
   template:: work-pack
-  collapsed:: true
-	- **Intent:**
+  id:: 69811fe2-b84b-4787-a1f5-6e8c4deaf988
+  #work-item #work-pack
+	- **Intent**:
+	  collapsed:: true
+		- **Notes:**
+		- **Why**:
 	- **Priority:**
-	- **Topics:**
-	- **Type:** work-pack
+	- **Disciplines:**
+	  id:: 69811fe2-0be6-438d-aba1-425381159428
 -
-- ## Daily task shorcuts
+- {{template work-klk}}
+- [[hey]]
+-
+-
+- ## Daily task shortcuts -------------
 - ## Gym push
   template:: gym-push
-  type::work-item, work
-  collapsed:: true
+  type:: work-item, work
 	- **Notes:**
+	- **Tip**:
 	- **Topics relation:**
 	- **Work pack:**
 	- **Priority:**
@@ -80,7 +91,9 @@
 	- **Cognitive Load:** 1
 - ## Gym pull
   template:: gym-pull
+  type:: work-item, work
 	- **Notes:**
+	- **Tip**:
 	- **Topics relation:**
 	- **Work pack:**
 	- **Priority:**
