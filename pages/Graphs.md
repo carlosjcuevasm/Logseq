@@ -1,0 +1,118 @@
+- Graphs become _powerful environments_ when edges don’t just connect nodes — they **carry computation**.
+-
+- TODO Learn Graph Science
+	- I focus on systems reasoning, dataflow-oriented design, and reactive architectures to keep complex systems understandable and change-friendly.
+		- > _Systems reasoning with a focus on dataflow and reactive architectures._
+	-
+-
+-
+- ---
+- ## The Trio → The Reading Map
+- ### 1. **Dependency graphs** → _Structure_
+- **Answers:** _What depends on what?_
+- **Mapped topics/books**
+	- **Graph Theory** (Diestel / West)
+		- → nodes, edges, DAGs, cycles
+	- **Dependency graphs**
+	- **Build Systems a la Carte**
+- This is about **ordering, causality, and traversal**.
+- ---
+- ### 2. **Attribute inheritance** → _Meaning_
+- **Answers:** _Where does a value come from?_
+- **Mapped topics/books**
+	- **Attribute Grammars**
+		- Synthesized attributes
+		- Inherited attributes
+- This is about **derivation vs authorship**, delegation, and propagation of meaning across structure.
+- This is **exactly** the problem you hit with WorkItem ← WorkPack.
+- ---
+- ### 3. **Incremental computation** → _Change_
+- **Answers:** _What updates when something changes?_
+- **Mapped topics/books**
+	- **Incremental computation**
+	- **Functional Reactive Programming (FRP)**
+	- **Derived data & views** (Kleppmann)
+- This is about **automatic recomputation**, efficiency, caching, and reactivity.
+- ---
+- ## One-table summary
+- | Trio concept | Reading topics |
+  | --- | --- |
+  | Dependency graphs | Graph Theory, Dependency graphs, Build Systems a la Carte |
+  | Attribute inheritance | Attribute Grammars |
+  | Incremental computation | Incremental computation, FRP, Derived data & views |
+- ---
+- ## Final anchor (unchanged, but now grounded)
+- **Structure = graph**
+- **Meaning = attribute inheritance**
+- **Behavior = evaluation (incremental computation)**
+- That _is_ the core system model you’re converging on.
+-
+-
+-
+-
+-
+- Computed properties are automatic rollups/lookups evaluated via rules across related nodes.
+-
+- Logseq is a **graph of addressable nodes**
+	- Every node can reference any other node
+	- That gives you **manual lookup / rollup**
+		- via embeds
+		- via references
+		- via queries (as views)
+-
+- Logseq allows **manual rollups and lookups** through references and queries, but it does not support **automatic computation across nodes**, so relationships do not produce **computed properties**.
+	- Logseq exposes a fully connected node graph, but the edges are non-evaluative; they do not propagate values.
+	- Logseq **does not evaluate the graph**
+	- Relationships **do not carry rules**
+	- Therefore:
+		- no automatic propagation
+		- no computed properties
+		- no inheritance
+		- no write-back
+- Logseq only supports manual or view-based rollups, not computed ones.
+-
+-
+- ## Why Logseq “could have been that” but isn’t
+- To support what you want, Logseq would need:
+	- a dependency engine
+	- a rule language
+	- cycle detection
+	- incremental recomputation
+	- UI rules for derived vs authored content
+- At that point, it stops being “plain Markdown + graph” and becomes:
+	- a **reactive knowledge system**
+- That’s closer to Notion / Airtable / spreadsheets / node editors.
+-
+- Got it — concise list only.
+- ---
+- ### Core graph foundations
+	- **Graph Theory** — Diestel / West
+		- (nodes, edges, DAGs, cycles)
+- ### Graphs as computation
+	- **Dependency graphs**
+	- **Dataflow graphs**
+	- **Computational graphs**
+	- Paper: **Build Systems a la Carte**
+- ### Attribute propagation (this maps _exactly_ to your need)
+	- **Attribute Grammars**
+		- Synthesized attributes
+		- Inherited attributes
+- ### Automatic recomputation
+	- **Incremental computation**
+	- **Functional Reactive Programming (FRP)**
+- ### Applied systems
+	- **Graph databases / knowledge graphs**
+	- **Derived data & views** (Kleppmann)
+- ---
+- ### One mental anchor
+- **Structure = graph**
+- **Behavior = evaluation**
+- That’s the core.
+-
+-
+- ## Why these three together matter
+- | Topic | Answers |
+  | --- | --- |
+  | Dependency graphs | **What depends on what?** |
+  | Attribute inheritance | **Where does this value come from?** |
+  | Incremental computation | **What must update when something changes?** |

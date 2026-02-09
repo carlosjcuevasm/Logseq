@@ -4,16 +4,6 @@
   max-width: 90% !important;
 }
 
-/* Subtle underline for any block that has children */
-.ls-block[haschild="true"] > .block-main-container .block-content {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 1px;
-  text-decoration-style: dotted;
-}
-
-
-
 
 /* Border on the block that has #work-item */
 div.ls-block[data-refs-self*="work-"] {
@@ -44,8 +34,8 @@ div.ls-block[data-refs-self*="work-"] .block-properties
 
 
 
-/* 
-/* hide all tags with prefix v. when not editing 
+
+/* hide all tags with prefix v. when not editing */
 .ls-block:not(:hover):not(.is-editing) a.tag[data-ref^="v."],
 .ls-block:not(:hover):not(.is-editing) a.tag[data-ref^="work-"] {
   display: none !important;
@@ -93,3 +83,5 @@ a.tag[data-ref^="wki-"]{
   max-height: 40px; /* enough for one line */
   pointer-events: auto;
 }
+
+

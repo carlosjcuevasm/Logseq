@@ -47,13 +47,12 @@
 			-
 		- **Adjustments for next sprint:**
 			-
-- ## TODO WKI-
+- ## TODO [[WKI-]]
   template:: work-item
-  WorkPack:: ((69811fe2-b84b-4787-a1f5-6e8c4deaf988)) 
+  WorkPack:: [[WKP-]]
   #work-item
-	- **Notes:**
-	  collapsed:: true
-		- **Why**:
+	- **Notes**:
+	- **Succes looks like**:
 	- **Disciplines:**
 	- **More:**
 	  collapsed:: true
@@ -62,14 +61,12 @@
 		- **Cognitive Load:**
 		- **Success:**
 		- **Sprint:**
-- ## TODO WKP-
-  template:: work-pack
+- ## TODO [[WKP-]]
   id:: 69811fe2-b84b-4787-a1f5-6e8c4deaf988
+  template:: work-pack
   #work-item #work-pack
-	- **Intent**:
-	  collapsed:: true
-		- **Notes:**
-		- **Why**:
+	- **Notes:**
+	- **Succes looks like:**
 	- **Priority:**
 	- **Disciplines:**
 	  id:: 69811fe2-0be6-438d-aba1-425381159428

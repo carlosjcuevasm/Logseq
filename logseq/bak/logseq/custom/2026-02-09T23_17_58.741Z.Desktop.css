@@ -63,8 +63,8 @@ div.ls-block[data-refs-self*="work-"] .block-properties
 }
 
 
-
-/* a.tag[data-ref^="wkp-"],
+/* 
+a.tag[data-ref^="wkp-"],
 a.tag[data-ref^="wki-"]{
   background: transparent !important;
   border: none !important;
@@ -93,3 +93,6 @@ a.tag[data-ref^="wki-"]{
   max-height: 40px; /* enough for one line */
   pointer-events: auto;
 }
+
+
+

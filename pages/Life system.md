@@ -15,6 +15,10 @@
 -
 - Me di cuenta que, necesitas un [Life model]([[Life System]]) (**las unidades**) y un [Control system]([[Nodes tools]]) (**como progresarlas**)
 - Model + Control System
+- **Most serious systems converge.**
+- Not because people copy each other, but because **the constraints are the same**
+-
+-
 -
 - ### Core idea
   

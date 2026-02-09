@@ -7,8 +7,37 @@
 - los anhelos más profundos de tu corazón puedan realizarse y quedarse contigo para siempre! 
   Puedes ser feliz. Siempre que mires tu exterior e interior puedas sentirte plenamente orgulloso de la persona que eres!
 -
-- *Every serious system has:* **A backlog of commitments** and **A way to advance some now**.*
+- *Every serious system has:* **A backlog of commitments** and **A way to advance some now**.
+  collapsed:: true
+	- Any system that _works_ must:
+	  collapsed:: true
+		- externalize memory
+		- prioritize
+		- limit scope
+		- break work down
+		- review and adjust
+	- whether it’s called **GTD**, **Agile**, **Kanban**, or something developed independently in another culture, the **DNA converges**.
+		- backlog exists
+		- commitment windows exist
+		- execution queues exist
+		- review cycles exist
+	- There really aren’t many other viable shapes.
+	- Thus this my system here...
+	- The win isn’t inventing a new shape; it’s **knowing why the shape exists**, so you can adapt it consciously instead of obeying it blindly.
 - Model + Control System
+- A great faming is goal or intent and  competency statement.
+  A good “success looks like” statement is something you’d be proud—and safe—to say out loud in a professional setting or any.
+	- why works:
+		- Forces **transfer**, not memorization
+		- Converts learning into **identity-level skill**
+		- Makes progress falsifiable (“can I say this honestly yet?”)
+	- example:
+		- **Goal**: Learn graph science as a foundation for system design.
+		- **Success look like:** I can reason about complex systems using dependency graphs, dataflow, and reactive principles, and explain design tradeoffs clearly
+-
+- [[Graphs]]
+-
+-
 -
 - ## **Life-operating system**
   id:: 697d200f-b7dd-4fe8-83db-663020ce8569
@@ -21,9 +50,12 @@
 		- fragmenting time
 		- pulling items from a pool
 		- committing progressively (month → sprint → week → day)
+- You'll realize each step owns it's proper item unit that enables it to be realized
+  collapsed:: true
+	- **Work Item notes** - This is the basic unit of work. This feature enable work breakdown or fragmentation.  You'll realize basic props almost to be mandatory. For instance,  for a sucessful  time workload planning for a sprint, weekly etc you'll need some type of work item estimation, hence time estimation. For cognitive load managmenet, you'll need a congnitive complexity. And so on for other things
 - **Time-scaled control system**:
 	- **Backlog** - All items you know about. Intentions, ideas, topics. Refined or not.  This is the inventory of nodes.
-		- ((69811683-c7cf-496d-8288-55b92b8d0483)) ( Kanban board one for easy handy)
+		- ( Kanban board one for easy handy)
 		- [[Items Backlog]] ( a general one)
 	- **Pack / Monthly planning** - Prioritization happens. What the main goals for the month are. Active builds and why them to anchor meaning
 		- [[Monthly planning]]
@@ -31,6 +63,7 @@
 		- [[Sprint planning]]
 	- **Kanban. Work item tracker**  — Main tool for knowing what is committed to work on. Sprint scope. A state machine for items with overall view. Results form the sprint planning. Pending / Working / Done.
 		- [[Kanban board]]
+	-
 	- **Weekly planning** — Weekly,  load management. This reflects sprint goals, now made a specific week intent.
 		- TODO plantilla. Creo que esto es mas reflexion que otra cosa
 	- **Daily agenda | daily view** — Daily organizer, what to do today. What to take in work items. Might just be Journals page.

@@ -4,16 +4,6 @@
   max-width: 90% !important;
 }
 
-/* Subtle underline for any block that has children */
-.ls-block[haschild="true"] > .block-main-container .block-content {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 1px;
-  text-decoration-style: dotted;
-}
-
-
-
 
 /* Border on the block that has #work-item */
 div.ls-block[data-refs-self*="work-"] {
