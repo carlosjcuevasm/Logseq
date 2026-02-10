@@ -1,25 +1,49 @@
-- {{renderer :kanban_651a3832-a06f-4dee-8c77-bc15908765e8}}
+-
 - ## Work Items
-	- Pending
+	- Active items
+	  collapsed:: true
 		- {{query (and [[work-item]] (task TODO LATER) (not (page Templates)))}}
 		  query-table:: false
 		-
+	- Next
+		- {{query (and [[work-item]] (task NOW))}}
 	- Working
 	  collapsed:: true
 		- [[prueba work item]]
 		  #defenses
-		- {{query (and [[work-item]] (task NOW DOING "IN-PROGRESS"))}}
-		  collapsed:: true
+		- {{query (and [[work-item]] (task DOING "IN-PROGRESS"))}}
 	- Done
 	  collapsed:: true
 		- {{query (and [[work-item]] (task DONE))}}
 		  collapsed:: true
 -
 -
--
+- NEXT hola
+- hola
+  :LOGBOOK:
+  CLOCK: [2026-02-09 Mon 19:34:20]
+  :END:
+- {{query }}
 -
 - # Items Backlog
-	- /it
+	-
+	- ## NOW [[WKI-Better Job postings]]
+	  WorkPack:: [[WKP-Now Contract]] 
+	  :LOGBOOK:
+	  CLOCK: [2026-02-09 Mon 20:29:16]
+	  :END:
+	  #work-item #provision
+		- **Blocked:** [[WKI-CV Fix]]
+		- **Notes**:
+		- **Succes looks like**:
+		- **Disciplines:**
+		- **More:**
+		  collapsed:: true
+			- **Priority:**
+			- **Time Est (hrs):**
+			- **Cognitive Load:**
+			- **Success:**
+			- **Sprint:**
 	- ## TODO [[WKI-Media Engineer path]] 
 	  #work-item
 		- **Notes**:
@@ -212,7 +236,10 @@
 			- **Cognitive Load:**
 			- **Success:**
 			- **Sprint:**
-	- ## TODO [[WKP-Now Contract]]
+	- ## TODO [[WKP-Now Contract]] 
+	  :LOGBOOK:
+	  CLOCK: [2026-02-09 Mon 20:05:46]--[2026-02-09 Mon 20:06:01] =>  00:00:15
+	  :END:
 	  #work-item #work-pack
 		- **Intent**:
 		  collapsed:: true
@@ -221,9 +248,14 @@
 		- **Succes looks like:**
 		- **Priority:**
 		- **Disciplines:**
-	- ## TODO [[WKI-CV Fix]] 
-	  WorkPack:: [[WKP-Now Contract]] 
-	  #work-item
+	- ## NOW [[WKI-CV Fix]] 
+	  id:: 698a3bb8-2957-43d0-bef9-4ff866eb22d6
+	  workpack:: [[WKP-Now Contract]]
+	  :LOGBOOK:
+	  CLOCK: [2026-02-09 Mon 20:24:34]
+	  :END:
+	  #work-item #provision
+		-
 		- **Succes looks like**
 		  collapsed:: true
 			- **Why**:
@@ -238,6 +270,9 @@
 			- **Sprint:**
 	- ## TODO [[WKI-Streaming Engineer review]] 
 	  WorkPack:: [[WKP-Now Contract]] 
+	  :LOGBOOK:
+	  CLOCK: [2026-02-09 Mon 20:05:47]--[2026-02-09 Mon 20:06:04] =>  00:00:17
+	  :END:
 	  #work-item
 		- **Succes looks like**
 		  collapsed:: true
@@ -253,6 +288,12 @@
 			- **Sprint:**
 	- ## TODO [[WKI-Ottera Recap]] 
 	  WorkPack:: [[WKP-Now Contract]] 
+	  :LOGBOOK:
+	  CLOCK: [2026-02-09 Mon 20:05:48]--[2026-02-09 Mon 20:06:05] =>  00:00:17
+	  CLOCK: [2026-02-09 Mon 20:06:53]--[2026-02-09 Mon 20:06:54] =>  00:00:01
+	  CLOCK: [2026-02-09 Mon 20:06:55]--[2026-02-09 Mon 20:06:56] =>  00:00:01
+	  CLOCK: [2026-02-09 Mon 20:06:57]--[2026-02-09 Mon 20:06:57] =>  00:00:00
+	  :END:
 	  #work-item
 		- **Succes looks like**
 		  collapsed:: true

@@ -1,8 +1,4 @@
 {:meta/version 1
- ;; only show scheduled tasks due today
- :scheduled/future-days 0
-
-
 
  ;; Set the preferred format.
  ;; Available options:
@@ -23,8 +19,7 @@
 
  ;; Define the default journal page template.
  ;; Enter the template name between the quotes.
- :default-templates
- {:journals ""}
+ :default-templates {:journals "daily-plan"}
 
  ;; Set a custom date format for the journal page title.
  ;; Default value: "MMM do, yyyy"
@@ -303,7 +298,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["Life system" "Nodes tools" "Business Digitalization / Operational Enablement" "Social Life" "Ps1 OSTs order" "Cosas" "IT services" "compo basics" "earthbound ost cover" "biz and code stuff" "doing" "to-do" "que-hacer" "defense" "leisure tasks" "inbox"]
+ :favorites ["Kanban board" "Life system" "Nodes tools" "Business Digitalization / Operational Enablement" "Social Life" "Ps1 OSTs order" "Cosas" "IT services" "compo basics" "earthbound ost cover" "biz and code stuff" "doing" "to-do" "que-hacer" "defense" "leisure tasks" "inbox"]
 
  ;; Set flashcards interval.
  ;; Expected value:

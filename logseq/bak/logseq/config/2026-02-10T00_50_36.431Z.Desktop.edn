@@ -1,8 +1,4 @@
 {:meta/version 1
- ;; only show scheduled tasks due today
- :scheduled/future-days 0
-
-
 
  ;; Set the preferred format.
  ;; Available options:
@@ -15,6 +11,8 @@
  ;; - :now for NOW/LATER style (default)
  ;; - :todo for TODO/DOING style
  :preferred-workflow :now
+ :task/markers {:todo ["TODO" "LATER" "NOW" "DOING" "WAIT"]
+                 :done ["DONE" "CANCELLED"]}}
 
  ;; Exclude directories/files.
  ;; Example usage:
@@ -24,7 +22,7 @@
  ;; Define the default journal page template.
  ;; Enter the template name between the quotes.
  :default-templates
- {:journals ""}
+ {:journals "daily-plan"}
 
  ;; Set a custom date format for the journal page title.
  ;; Default value: "MMM do, yyyy"
@@ -303,7 +301,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["Life system" "Nodes tools" "Business Digitalization / Operational Enablement" "Social Life" "Ps1 OSTs order" "Cosas" "IT services" "compo basics" "earthbound ost cover" "biz and code stuff" "doing" "to-do" "que-hacer" "defense" "leisure tasks" "inbox"]
+ :favorites ["Kanban board" "Life system" "Nodes tools" "Business Digitalization / Operational Enablement" "Social Life" "Ps1 OSTs order" "Cosas" "IT services" "compo basics" "earthbound ost cover" "biz and code stuff" "doing" "to-do" "que-hacer" "defense" "leisure tasks" "inbox"]
 
  ;; Set flashcards interval.
  ;; Expected value:
@@ -428,7 +426,3 @@
  :feature/enable-journals? true
  :preferred-format :markdown
  :journal/page-title-format "E, dd-MM-yyyy"}
-
- :task/markers
- {:todo ["NOW" "LATER" "WAIT"]
-  :done ["DONE"]}

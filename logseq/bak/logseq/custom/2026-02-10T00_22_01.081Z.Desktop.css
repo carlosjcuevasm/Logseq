@@ -44,27 +44,27 @@ div.ls-block[data-refs-self*="work-"] .block-properties
 
 
 
-
-/* hide all tags with prefix v. when not editing */
-/* .ls-block:not(:hover):not(.is-editing) a.tag[data-ref^="v."],
+/* 
+/* hide all tags with prefix v. when not editing 
+.ls-block:not(:hover):not(.is-editing) a.tag[data-ref^="v."],
 .ls-block:not(:hover):not(.is-editing) a.tag[data-ref^="work-"] {
   display: none !important;
 } */
- */
+
 
 
 
 
 /* Hide the query builder bar (Live query + blue pills), keep results */
-.ls-block:not(.is-editing) .cp__query-builder,
+/* .ls-block:not(.is-editing) .cp__query-builder,
 .ls-block:not(.is-editing) .th {
   display: none !important;
   
-}
+} */
 
 
-/* 
-a.tag[data-ref^="wkp-"],
+
+/* a.tag[data-ref^="wkp-"],
 a.tag[data-ref^="wki-"]{
   background: transparent !important;
   border: none !important;
@@ -73,6 +73,40 @@ a.tag[data-ref^="wki-"]{
   text-decoration: underline !important;
   
 } */
+
+
+/* === Domain chips: provision / expression / recovery === */
+/* Works for both #tags (.tag) and [[page refs]] (.page-ref) */
+
+a.tag[data-ref="provision"],
+a.page-ref[data-ref="provision"] {
+  background: var(--prov-bg, #d57b7b)) !important;
+  color: var(--prov-fg, #0b3d1f) !important;
+  border: 1px solid var(--prov-br, #d57b7b) !important;
+  padding: 0.05rem 0.35rem !important;
+  border-radius: 999px !important;
+}
+
+a.tag[data-ref="expression"],
+a.page-ref[data-ref="expression"] {
+  background: var(--expr-bg, #e8e6ff) !important;
+  color: var(--expr-fg, #2b1f7a) !important;
+  border: 1px solid var(--expr-br, #a49bff) !important;
+  padding: 0.05rem 0.35rem !important;
+  border-radius: 999px !important;
+}
+
+a.tag[data-ref="recovery"],
+a.page-ref[data-ref="recovery"] {
+  background: var(--recv-bg, #fff1db) !important;
+  color: var(--recv-fg, #6b3a00) !important;
+  border: 1px solid var(--recv-br, #ffcc80) !important;
+  padding: 0.05rem 0.35rem !important;
+  border-radius: 999px !important;
+}
+
+
+
 
 /* Hide query "group-by page" header (e.g., "Kanban board") unless hovered/focused */
 .custom-query-results .custom-query-page-result .foldable-title,
@@ -93,6 +127,3 @@ a.tag[data-ref^="wki-"]{
   max-height: 40px; /* enough for one line */
   pointer-events: auto;
 }
-
-
-

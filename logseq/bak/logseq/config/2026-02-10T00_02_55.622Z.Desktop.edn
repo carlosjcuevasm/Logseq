@@ -1,6 +1,13 @@
 {:meta/version 1
- ;; only show scheduled tasks due today
- :scheduled/future-days 0
+ 
+ 
+ ;; Set the preferred workflow style.
+ ;; Available options:
+ ;; - :now for NOW/LATER style (default)
+ ;; - :todo for TODO/DOING style 
+ :preferred-workflow :todo
+ :task/markers {:todo ["TODO" "LATER" "NOW" "DOING" "WAIT"]
+                :done ["DONE" "CANCELLED"]}}
 
 
 
@@ -10,11 +17,6 @@
  ;; - Org
  ;; :preferred-format "Markdown"
 
- ;; Set the preferred workflow style.
- ;; Available options:
- ;; - :now for NOW/LATER style (default)
- ;; - :todo for TODO/DOING style
- :preferred-workflow :todo
 
  ;; Exclude directories/files.
  ;; Example usage:
@@ -303,7 +305,7 @@
  ;;  :charge-range    600}   ; Default value: 600
 
  ;; Favorites to list on the left sidebar
- :favorites ["Life system" "Nodes tools" "Business Digitalization / Operational Enablement" "Social Life" "Ps1 OSTs order" "Cosas" "IT services" "compo basics" "earthbound ost cover" "biz and code stuff" "doing" "to-do" "que-hacer" "defense" "leisure tasks" "inbox"]
+ :favorites ["Kanban board" "Life system" "Nodes tools" "Business Digitalization / Operational Enablement" "Social Life" "Ps1 OSTs order" "Cosas" "IT services" "compo basics" "earthbound ost cover" "biz and code stuff" "doing" "to-do" "que-hacer" "defense" "leisure tasks" "inbox"]
 
  ;; Set flashcards interval.
  ;; Expected value:

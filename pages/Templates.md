@@ -1,4 +1,26 @@
-# Item Management Templates------------
+## 🌤️ Today
+  template:: daily-plan
+	- #v.kanban
+		- 🎯 Focus (max 3)
+		- 🔨 Work / Action
+			- TODO
+			- TODO
+		- 🌱 Life balance
+			- **Provision:**
+			- **Expression:**
+			- **Recovery:**
+	- #v.kanban
+		- 🧠 Notes / Thoughts
+		- 📥 Inbox
+			- TODO
+		- 🌙 End of day
+			- What moved forward?
+			- One adjustment for tomorrow:
+		- TODO Gym
+			- SCHEDULED: <2025-05-16 Fri +1w>
+-
+- # Item Management Templates------------
+-
 - **Goal:**
   template:: monthly-goal
   collapsed:: true
@@ -61,6 +83,49 @@
 		- **Cognitive Load:**
 		- **Success:**
 		- **Sprint:**
+- ## TODO [[WKI-]]
+  template:: work-item-provision
+  WorkPack:: [[WKP-]]
+  collapsed:: true
+  #work-item #provision
+	- **Notes**:
+	- **Succes looks like**:
+	- **Disciplines:**
+	- **More:**
+	  collapsed:: true
+		- **Priority:**
+		- **Time Est (hrs):**
+		- **Cognitive Load:**
+		- **Success:**
+		- **Sprint:**
+- TODO [[WKI-]]
+  collapsed:: true
+  template: work-item-expresion
+  #work-item#expression
+	- **Notes**:
+	- **Succes looks like**:
+	- **Disciplines:**
+	- **More:**
+	  collapsed:: true
+		- **Priority:**
+		- **Time Est (hrs):**
+		- **Cognitive Load:**
+		- **Success:**
+		- **Sprint:**
+- TODO [[WKI-]]
+  collapsed:: true
+  template: work-item-recovery
+  #work-item#recovery
+	- **Notes**:
+	- **Succes looks like**:
+	- **Disciplines:**
+	- **More:**
+	  collapsed:: true
+		- **Priority:**
+			- **Time Est (hrs):**
+				- **Cognitive Load:**
+					- **Success:**
+						- **Sprint:**
 - ## TODO [[WKP-]]
   id:: 69811fe2-b84b-4787-a1f5-6e8c4deaf988
   template:: work-pack
