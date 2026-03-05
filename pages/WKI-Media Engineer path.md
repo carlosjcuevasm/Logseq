@@ -1589,32 +1589,41 @@
 		- #### **The "Senior" Extension (The Real Interview Winner):**
 			- **Artificial Network Degradation:** Add a GStreamer element called `identity` with the `drop-probability` property.
 			- **The Demo:** Show how your dashboard reacts when you programmatically introduce 10% packet loss. Explain how you would implement **Forward Error Correction (FEC)** or **NACKs** to recover.
-	- ---
-	- ### **Project 3: The "Secure VOD Factory" (DRM + VMAF + JIT)**
+	- ### **Project 3: The "Secure VOD Factory" (DRM + VMAF + JIT + Edge-AI)**
 	  collapsed:: true
-		- to add:
-			- **The Feature:** Export **VMAF scores** as custom metrics.
-			- **The "Media Economist" Angle:** Create a Grafana dashboard that overlays **CDN Cost** vs. **Average QoE**.
-			- **The Pitch:** _"I can show you the exact point where increasing the bitrate stops improving user satisfaction but keeps increasing our AWS bill."_
-		- **Layer Covered:** 5 (Infrastructure), 2 (Packaging) **Goal:** Prove you can build a secure, cost-optimized, and dynamic production pipeline.
+		- **Layer Covered:** 5 (Infrastructure), 2 (Packaging), 7 (Observability)
+		- **Goal:** Prove you can build a secure, cost-optimized, dynamic, and **Edge-Native** production pipeline.
 		- #### **The "Core" (Months 5–6):**
-			- **The Task:** Build an automated pipeline that takes a high-quality "Mezzanine" file and prepares it for secure, scalable delivery.
+		  collapsed:: true
+			- **The Task:** Build an automated pipeline that takes a high-quality "Mezzanine" file and prepares it for secure, scalable, and intelligent delivery.
 			- **The Workflow:**
 				- 1.  **Transcode:** Use FFmpeg to create 3 renditions (1080p, 720p, 480p).
-				- 2.  **Analyze (The Economist):** Run **VMAF** on these versions _before_ encryption. Compare them to the source to find the "Bitrate Floor"—the lowest possible bitrate that still looks "Premium" (VMAF > 93).
-				- 3.  **Protect (The Security):** Use **Shaka Packager** to encrypt the raw segments using **ClearKey**.
+				- 2.  **Analyze (The Economist):** Run **VMAF** on these versions before encryption. Compare them to the source to find the "Bitrate Floor"—the lowest possible bitrate that still looks "Premium" (VMAF > 93).
+				- 3.  **Protect (The Security):** Use Shaka Packager to encrypt the raw segments using **ClearKey**.
 				- 4.  **JIT Origin Proxy (The "Senior" Twist):**
 					- **Storage:** Store only the encrypted `.m4s` segments in a bucket.
 					- **The Service:** Build a small Node.js service that acts as the "Origin."
-					- **Dynamic Manifests:** When a player requests a manifest, your service **generates the .m3u8 or .mpd on the fly**, inserting the correct DRM license URL and segment paths.
-		- ### **The "Senior" Proof Points**
-		- In an interview for a **$7k–$8k/month** role, this project allows you to say:
-		- > _"I built a JIT packaging origin that reduces storage costs by 60% because we only store the media segments once. The manifests are generated at request-time, allowing us to swap DRM providers or rotate keys without touching the physical files in S3."_
-			- #### **Key Features to Demo:**
-				- **The "Media Economist" Dashboard:** A simple HTML page showing:
-					- **VMAF Score:** (e.g., 95.2)
-					- **Cost Savings:** _"Optimizing from 6Mbps to 4.5Mbps saves **$X per 1M TB** of CDN transfer."_
-				- **ClearKey Licensing Server:** A Node.js endpoint `/license` that your player (Shaka Player) must call. This proves you know how the **EME (Encrypted Media Extensions)** handshake works.
+					- **Dynamic Manifests:** Your service generates the `.m3u8` or `.mpd` on the fly, inserting the DRM license URL and segment paths.
+		- ---
+		- #### **The "2026 Edge-Native" Extension:**
+		  collapsed:: true
+			- **The Edge-AI Twist:** Implement a **Client-Side Upscaler** using **WebGPU**.
+				- **Logic:** If the user’s bandwidth drops and the player switches to the 480p stream, the player uses a **WebGPU-based Super-Resolution (AI)** model to upscale the video to 1080p locally on the device.
+			- **The Telemetry (Domain 7):** Export VMAF scores and real-time **Device GPU usage** as custom metrics.
+		- ---
+		- #### **The "Senior" Proof Points:**
+		  collapsed:: true
+			- In an interview for a **$7k–$8k/month** role, this project allows you to say:
+			- > _"I built a JIT packaging origin that reduces storage by 60%. More importantly, I implemented a **WebGPU fallback** that uses the client’s hardware to upscale low-bitrate streams. This allows us to serve a lower-bitrate 'economic' ladder while maintaining a high perceived quality (QoE), drastically reducing our egress costs."_
+		- ---
+		- #### **Key Features to Demo:**
+		  collapsed:: true
+			- **The "Media Economist" Dashboard:** A Grafana/HTML dashboard overlaying **CDN Cost vs. Average QoE**.
+				- **VMAF Score:** (e.g., 95.2)
+				- **Cost Savings:** _"By using Edge-AI upscaling for mobile users, we reduced high-bitrate delivery by 30%, saving $X per 1M TB while maintaining a VMAF-equivalent of 90+."_
+				- **The Pitch:** _"I can show you the exact point where increasing the bitrate stops improving user satisfaction but keeps increasing our AWS bill."_
+			- **ClearKey Licensing Server:** A Node.js endpoint `/license` that your player must call. This proves you know the **EME (Encrypted Media Extensions)** handshake.
+			- **WebGPU Toggle:** A "Before vs. After" button in your video player that shows the raw 480p stream vs. the AI-upscaled version running locally.
 	- ---
 - ---
 - ### **The "Gamble" Final Check: Is this 6-month plan too much?**
