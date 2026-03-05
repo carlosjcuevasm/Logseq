@@ -1,0 +1,30 @@
+- Looks like i like
+	- defined subject colors withs trong colors pop, over void backgrounds.
+	- "Liquid "flow motions in the objects and their composition.
+	- And glassy  glossy textures like frosted glass and ribbed.
+	- Spunds like am2 ps2 and ps1 and slav house.
+- ## Illustrations
+- row #v.kanban
+	- ![image.png](../assets/image_1771664310038_0.png){:height 263, :width 344}
+	- ![image.png](../assets/image_1771664334320_0.png){:height 308, :width 208}
+	- ![image.png](../assets/image_1771664349191_0.png){:height 618, :width 257}
+	- ![image.png](../assets/image_1771664363798_0.png){:height 140, :width 331}
+	- ![image.png](../assets/image_1771664388727_0.png){:height 242, :width 319}
+	- ![image.png](../assets/image_1771664397407_0.png){:height 173, :width 325}
+- ![image.png](../assets/image_1772062667498_0.png){:height 223, :width 213}
+-
+- ## Textures
+- row #v.kanban
+	- ![image.png](../assets/image_1771665184526_0.png){:height 646, :width 246}
+	  id:: 69997719-8b73-4082-871c-43c19fcca530
+	- ![image.png](../assets/image_1771664985402_0.png){:height 410, :width 242}
+	- ![image.png](../assets/image_1771665142757_0.png){:height 240, :width 256}
+	- ![image.png](../assets/image_1771665308866_0.png){:height 442, :width 264}
+	-
+- ## Apartments
+- row #v.kanban
+	- ![image.png](../assets/image_1771666027178_0.png){:height 166, :width 134}
+	- ![image.png](../assets/image_1771664822322_0.png){:height 292, :width 313}
+	- ![image.png](../assets/image_1771665400677_0.png){:height 317, :width 333}
+	- ![image.png](../assets/image_1771665504472_0.png)
+	-

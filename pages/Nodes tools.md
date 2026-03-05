@@ -1,64 +1,41 @@
--
-- Todas lo que importa y haces en la vida, es y/o puede ser un nodo, clasificable.
-  Aquí un sistema para tomar control, tener una vida mas deseada. 
-  Que todo lo que realmente importa, tenga excelente oportunidad de suceder.
-  Ser mas completo, ser mas coherente, 
-  ser mas tu, ser mas feliz.
-- los anhelos más profundos de tu corazón puedan realizarse y quedarse contigo para siempre! 
-  Puedes ser feliz. Siempre que mires tu exterior e interior puedas sentirte plenamente orgulloso de la persona que eres!
--
-- *Every serious system has:* **A backlog of commitments** and **A way to advance some now**.
-  collapsed:: true
-	- Any system that _works_ must:
-	  collapsed:: true
+- *Every serious system has* a **backlog of commitments** and **a way to advance some now**.
+	- Any system that works, do these:
 		- externalize memory
 		- prioritize
 		- limit scope
 		- break work down
 		- review and adjust
-	- whether it’s called **GTD**, **Agile**, **Kanban**, or something developed independently in another culture, the **DNA converges**.
+	- Whether it’s called **GTD**, **Agile**, **Kanban**, or something developed independently in another culture, the **DNA converges**.
 		- backlog exists
 		- commitment windows exist
 		- execution queues exist
 		- review cycles exist
 	- There really aren’t many other viable shapes.
-	- Thus this my system here...
-	- The win isn’t inventing a new shape; it’s **knowing why the shape exists**, so you can adapt it consciously instead of obeying it blindly.
-- Model + Control System
-- A great faming is goal or intent and  competency statement.
-  A good “success looks like” statement is something you’d be proud—and safe—to say out loud in a professional setting or any.
-	- why works:
-		- Forces **transfer**, not memorization
-		- Converts learning into **identity-level skill**
-		- Makes progress falsifiable (“can I say this honestly yet?”)
-	- example:
-		- **Goal**: Learn graph science as a foundation for system design.
-		- **Success look like:** I can reason about complex systems using dependency graphs, dataflow, and reactive principles, and explain design tradeoffs clearly
--
-- [[Graphs]]
--
--
+		- Thus this my system here...
+		- The win isn’t inventing a new shape; it’s **knowing why the shape exists**, so you can adapt it consciously instead of obeying it blindly.
+	- As any system, it has a **Model + Control System**
+	- Remember, is a life operating model. Thus, managing commitments under uncertainty.
 -
 - ## **Life-operating system**
   id:: 697d200f-b7dd-4fe8-83db-663020ce8569
   for Provision / Expression / Recovery.
 - The system strategy is fragmentar en base a prioridad y balance.
   collapsed:: true
-	- What makes it _not_ just a task list is that **each layer narrows the pool differently**.
-	- Steps
+	- **Each layer narrows the pool differently**.
+	- You'll realize each step owns it's proper item unit that enables it to be realized
 	  collapsed:: true
 		- fragmenting time
 		- pulling items from a pool
 		- committing progressively (month → sprint → week → day)
-- You'll realize each step owns it's proper item unit that enables it to be realized
-  collapsed:: true
-	- **Work Item notes** - This is the basic unit of work. This feature enable work breakdown or fragmentation.  You'll realize basic props almost to be mandatory. For instance,  for a sucessful  time workload planning for a sprint, weekly etc you'll need some type of work item estimation, hence time estimation. For cognitive load managmenet, you'll need a congnitive complexity. And so on for other things
+		-
 - **Time-scaled control system**:
 	- **Backlog** - All items you know about. Intentions, ideas, topics. Refined or not.  This is the inventory of nodes.
 		- ( Kanban board one for easy handy)
 		- [[Items Backlog]] ( a general one)
 	- **Pack / Monthly planning** - Prioritization happens. What the main goals for the month are. Active builds and why them to anchor meaning
 		- [[Monthly planning]]
+	- ---
+	- ((ed5223c7-049b-4a2a-ae43-2f1a3db95053))
 	- **Sprint review and planning** - Is a commitment to items window . Respond to the monthly goals. Working items in packages, 2-week (or similar). Also Completed + % progress
 		- [[Sprint planning]]
 	- **Kanban. Work item tracker**  — Main tool for knowing what is committed to work on. Sprint scope. A state machine for items with overall view. Results form the sprint planning. Pending / Working / Done.
@@ -77,8 +54,9 @@
 		  Weekly  → balances load
 		  Daily   → executes
 	- ---
-- Remember, is a life operating model. Thus, managing commitments under uncertainty.
+-
 - #### Fun facts
+  collapsed:: true
 	- This is "Agile" methodology
 	  collapsed:: true
 		- | Scrum Concept | Your Life System |

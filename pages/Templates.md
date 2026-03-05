@@ -1,23 +1,43 @@
-## 🌤️ Today
-  template:: daily-plan
-	- #v.kanban
-		- 🎯 Focus (max 3)
-		- 🔨 Work / Action
-			- TODO
-			- TODO
-		- 🌱 Life balance
-			- **Provision:**
-			- **Expression:**
-			- **Recovery:**
-	- #v.kanban
-		- 🧠 Notes / Thoughts
-		- 📥 Inbox
-			- TODO
-		- 🌙 End of day
+## 🌤️ New opportunity
+template:: daily
+	- Todo lo que te importa, todo lo que hace tu vida.
+	  collapsed:: true
+		- Toma control. Ten una vida mas deseada.  
+		  Lo que realmente quires para ti, tenga la oportunidad de suceder.  
+		  Los anhelos más profundos de tu corazón pueden realizarse y quedarse contigo para siempre
+		  Siempre que mires tu exterior e interior puedas sentirte plenamente orgulloso de la persona que eres!
+		  Puedes ser feliz.
+		  Se mas coherente, ten paz contigo.  
+		  Se mas tu. Se mas feliz.
+	- Quick #v.kanban
+		- ## 🧠 Notes
+			-
+			-
+			-
+		- ## 🌙 End of Day
 			- What moved forward?
-			- One adjustment for tomorrow:
-		- TODO Gym
-			- SCHEDULED: <2025-05-16 Fri +1w>
+			- What blocked?
+			- One adjustment for tomorrow
+			-
+	- ### 🔥 Stuff #v.kanban
+		- ### 📥 Capture
+		  collapsed:: true
+			- TODO
+			- TODO
+			- TODO
+			-
+		- ### 🛠 In Progress
+			- {{query (and [[work-item]] (task DOING "IN-PROGRESS"))}}
+	- ### ℹ️NEXT
+	  collapsed:: true
+	  :LOGBOOK:
+	  CLOCK: [2026-02-13 Fri 01:42:30]
+	  CLOCK: [2026-02-13 Fri 01:42:56]
+	  :END:
+		- {{query (and [[work-item]] (task NOW))}}
+-
+-
+-
 -
 - # Item Management Templates------------
 -
@@ -69,69 +89,27 @@
 			-
 		- **Adjustments for next sprint:**
 			-
-- ## TODO [[WKI-]]
+- ## TODO ITEM
   template:: work-item
-  WorkPack:: [[WKP-]]
+  Pack:: [[P-]]
   #work-item
-	- **Notes**:
+	- ## NAME: [[I-]]
 	- **Succes looks like**:
+	- **Time Est (hrs):**
+	- **Notes**:
 	- **Disciplines:**
 	- **More:**
 	  collapsed:: true
 		- **Priority:**
-		- **Time Est (hrs):**
 		- **Cognitive Load:**
 		- **Success:**
 		- **Sprint:**
-- ## TODO [[WKI-]]
-  template:: work-item-provision
-  WorkPack:: [[WKP-]]
-  collapsed:: true
-  #work-item #provision
-	- **Notes**:
-	- **Succes looks like**:
-	- **Disciplines:**
-	- **More:**
-	  collapsed:: true
-		- **Priority:**
-		- **Time Est (hrs):**
-		- **Cognitive Load:**
-		- **Success:**
-		- **Sprint:**
-- TODO [[WKI-]]
-  collapsed:: true
-  template: work-item-expresion
-  #work-item#expression
-	- **Notes**:
-	- **Succes looks like**:
-	- **Disciplines:**
-	- **More:**
-	  collapsed:: true
-		- **Priority:**
-		- **Time Est (hrs):**
-		- **Cognitive Load:**
-		- **Success:**
-		- **Sprint:**
-- TODO [[WKI-]]
-  collapsed:: true
-  template: work-item-recovery
-  #work-item#recovery
-	- **Notes**:
-	- **Succes looks like**:
-	- **Disciplines:**
-	- **More:**
-	  collapsed:: true
-		- **Priority:**
-			- **Time Est (hrs):**
-				- **Cognitive Load:**
-					- **Success:**
-						- **Sprint:**
-- ## TODO [[WKP-]]
+- ## TODO [[P-]]
   id:: 69811fe2-b84b-4787-a1f5-6e8c4deaf988
   template:: work-pack
   #work-item #work-pack
-	- **Notes:**
 	- **Succes looks like:**
+	- **Notes:**
 	- **Priority:**
 	- **Disciplines:**
 	  id:: 69811fe2-0be6-438d-aba1-425381159428

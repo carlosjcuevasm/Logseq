@@ -4,13 +4,15 @@
   max-width: 90% !important;
 }
 
-/* Subtle underline for any block that has children */
-.ls-block[haschild="true"] > .block-main-container .block-content {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  text-decoration-thickness: 1px;
-  text-decoration-style: dotted;
+/* Decorate bullets of blocks that have children */
+.ls-block[haschild="true"] > .block-main-container 
+  .bullet-container .bullet {
+  box-shadow: 0 0 0 3px rgba(158, 157, 157, 0.6);
+  border-radius: 50%;
 }
+
+
+
 
 
 
@@ -44,23 +46,23 @@ div.ls-block[data-refs-self*="work-"] .block-properties
 
 
 
-/* 
-/* hide all tags with prefix v. when not editing 
+ 
+/* hide all tags with prefix v. when not editing  */
 .ls-block:not(:hover):not(.is-editing) a.tag[data-ref^="v."],
 .ls-block:not(:hover):not(.is-editing) a.tag[data-ref^="work-"] {
   display: none !important;
-} */
+}
 
 
 
 
 
 /* Hide the query builder bar (Live query + blue pills), keep results */
-/* .ls-block:not(.is-editing) .cp__query-builder,
+.ls-block:not(.is-editing) .cp__query-builder,
 .ls-block:not(.is-editing) .th {
   display: none !important;
   
-} */
+}
 
 
 

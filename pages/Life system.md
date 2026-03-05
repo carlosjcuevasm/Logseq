@@ -1,5 +1,5 @@
 - [[Nodes tools]]
--
+- [[Graphs]]
 -
 - ***Define your thinking, then map tools to it*** (You're lucky)
   collapsed:: true
@@ -18,6 +18,54 @@
 - **Most serious systems converge.**
 - Not because people copy each other, but because **the constraints are the same**
 -
+-
+- **language is what lets humans think in structured, abstract, recursive ways.**
+- But let’s be precise.
+- Humans can perceive, feel, and act without language.
+- What language gives you is:
+	- **Abstraction** – “Project”, “roadmap”, “constraint” compress massive meaning into a token.
+	- **Recursion** – A project can contain projects. A sentence can contain sentences.
+	- **Time modeling** – You can reason about past, future, hypothetical states.
+	- **Meta-thinking** – You can think about thinking.
+	- **Shared cognition** – You can transmit structure to another mind.
+- What you’re doing with your life system is exactly this:
+- You are creating a vocabulary that allows structured internal computation.
+- Without words like:
+	- Project
+	- Decomposable
+	- Cognitive load
+	- Ongoing item
+	- Clarification
+- You would still act — but you couldn’t reason about the system cleanly.
+- Language is not just communication.
+- It is **cognitive compression and structure encoding**.
+-
+- **Workload General Concepts**: Much needed concepts to have clear when dealing with the work load management system.
+  id:: ed5223c7-049b-4a2a-ae43-2f1a3db95053
+	- **Topic:** A field of interest. A classification view of a node. A trait many other nodes, knowns or unknows share. . It is actionable in the sense that you allocate time to work that emerges from it, but the node itself is not a work unit.
+		- Example: Music → spawns Compo, Piano, DJ or... Compo, Piano, DJ share the Music relation.
+	- **Project:** A sequence of work to be completed and produce progress. Anything decomposable into a roadmap, hence composed of many work items or even many work packs. It can exist at different scopes (macro project, project, subproject, etc.), but its defining trait is decomposability into structured execution units.
+		- Example: "Cover EarthBound OST"
+	- **Roadmap:** Inherent to any true project, it is the coherent and structured decomposition of a project into executable steps. It takes the form of one or many sequenced work units. It adapts as clarification deepens and as new information is discovered.
+		- Example: "Cover Earthbound OST" → Choose songs → Cover each song → Mix → Publish.
+	- **Clarification:** A cognitive process that is heavy at life system start, as most items initially lack a roadmap. It consists of researching, realizing, or thinking through a subject to better understand it and plan accordingly. It may lead to the creation of new work units or edits to an existing roadmap.
+		- Example: “I'm not sure how these hi-hats are done in EarthBound… how to solve this?” → Break it down → Analyze → Derive method → Update roadmap.
+	- **Constraints (Cognitive Load & Time Estimation):** Any work item or work pack has two nearly mandatory attributes: cognitive load and time estimation. Even if not explicitly inputted, they exist implicitly and are the primary constraints when planning workload, especially within a sprint. They determine capacity, balance, and feasibility.
+	- **Goal and Sucess definition**: A clear intention or definition of the task. A measurable statement describing what I can now do, what things I can now solve and maybe what artifact proves these.  Ideally, no work pack is complete without these.
+		- It works because converts learning into **identity-level skill**. Makes progress falsifiable (“can I say this honestly yet?”)
+		- **Goal**: A good goal is clear in defining what's to be completed.
+			- Example: Learn graph science as a foundation for system design
+		- **Success look like:** A good “success looks like” statement is something you’d be proud—and safe—to say out loud in a professional setting or any.
+			- Example: I can reason about complex systems using dependency graphs, dataflow, and reactive principles, and explain design tradeoffs clearly
+			- Example: “I can design and deploy a basic event-driven architecture using Kafka.”
+	- **Work pack:** An item of work that contain work items or may contain other work packs. Projects are work packs. It functions as a decomposable execution container. It can be seen as a subproject or a project depending on context and scope. Ideally, every meaningful project has at least one primary work pack anchoring execution.
+		- Example: Scope layering — "Cover BGM I love" (macro), "Cover EarthBound OST" (project), "Cover Your Name Please" (sub-scope).
+	- **Work item:** The smallest actionable unit of work (at least within the tracking system). It is atomic relative to the current planning horizon. If it becomes cognitively or structurally complex, it should be decomposed into a work pack. It may or may not belong under a work pack.
+		- Example: "Cover Your Name Please" could be a work item. If unexpected complexity appears, it may need promotion into a work pack.
+	- **Ongoing work item:** A possibility where the desired result requires repetitive execution of the same work unit, either toward completion or for continuous upkeep. The recurrence itself is essential to the outcome.
+		- Example: "Cover at least one track weekly" / "Play piano 5 days a week" / "Do laundry" / "Clean floors."
+	- **Quick work item:** A constraint-defined classification. Low cognitive load, short duration, immediately executable, and typically independent of complex dependencies.
+		- Example: "Do laundry" / "Look real estate postings."
 -
 -
 - ### Core idea

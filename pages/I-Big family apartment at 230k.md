@@ -1,0 +1,66 @@
+## Size not(∝) to Value
+	- **White elephant** metaphor: valuable possession that is extremely costly to maintain, burdensome to keep, and difficult to dispose of
+	- Raw square meters is value, but not exactly **usable value**
+		- **Functional space** m² (open kitchen, integrated living, usable bedrooms)
+		- **Dead space** m² (hallways, maid quarters nobody uses, oversized formal dining)
+		- Because is big, needs high maintenance. Big means high renovation cost. Which means out of market, thus not generating money.
+	- Value today respond to a new way of life, **luxury and value has shifted to frictionless living.**
+- ## **Today Luxury and value (has shifted)**
+	- **Luxury today = frictionless life.**
+		- Value today exist in other stuff: Elevator, Lobby, Security,Generator (planta full),Covered parking, Amenities (gym, social spaces with pool, meeting rooms, sports)
+		- The building was luxury when built but **the lifestyle changed. The building didn’t.** Today, if someone has $230-280k, they usually want “arrive in lobby” energy. Today buyer in that bracket wants **comfort, frictionless living, modernity, status**.
+		- Without luxury it’s just big. Is a lifestyle that essentially does not exist anymore
+- ## Property is hostile to the neighborhood premise
+  collapsed:: true
+	- The zone is for "high income seniors" but the building is not senior friendly, is **senior hostile**. **This kind of money is not about just buying shelter.**
+		- Big 4th floor walk-up, own managment of gas, electricity backup, heater etc. No roofed park means rush on rainy day. Car repairs etc.
+		- If the people who have the money to live in Cacicazgos are the same people whose knees can't handle 60 steps, you have a product with zero natural buyer
+		- Or the young high-income convenience buyer, is also repelled. No lazy executives. No Airbnb efficiency
+		- Thus a "opportunity at incredible low cost" buyer is the public
+	- When you use an asset in a way that is counter to its neighborhood identity, you introduce tension.
+		- **It can work, but it’s not frictionless.And friction always costs something.**
+	- ### Off the bat trends not compatible to neighboorhood
+		- Forcing a **student/roommate model** into Los Cacicazgos is incompatible as a solid strategy to rely on.
+		- That zone is Family-oriented, Upper-middle / high-incom, Low density. Is not a roommate hotspot. Is not a zone where "roomate" demographic has "close by" stuff to use. Is not a downtown or city center. Is "old money family oriented neighborhood".
+		- Operational Intensity
+			- Roommate model = Higher tenant turnover, More management, More wear and tear, More conflict probability, More neighbor friction.
+				- That’s not passive, that’s active management. So yield goes up. Effort goes up. Risk goes up.
+		-
+- ## Stability drivers is not same as Premium drivers
+  collapsed:: true
+	- **Stability drivers prevents crash:** Mirador Sur proximity, Taino park at front and Supermarket nearby is stabilizing the value. Is hard to loose much money. But that does not mean liquidity, cash flow or huge increase in value moving on, as things are already settled long ago.
+		- Vehicles are everywhere, and a 3-10 minute drive is extremely easy, makes the park at front almost feel the same.
+		- Park = prevents crash
+		  Elevator and amenities = increases demand
+- ## Property is valued incorrectly and it's nature persist
+  collapsed:: true
+	- **No elevator commands a specific dynamic.** **Is priced as a 1st or at most 2nd floor (no elevator).** Because friction increases with height. Carrying groceries, kids, furniture, age, are factors that become a lifestyle tax
+		- **2nd floor** – most desirable
+		- **1st floor** – slightly less
+		- **3rd floor** – discounted -5% to -8%
+		- **4th floor** – biggest discount -10% to -15%
+	- **With elevator the hierarchy flips**. Essentially Higher = better view + more privacy. 1st floor (sometimes least desirable). This is because friction of accesability is removed. So buyers optimize for high floor views, noise reduction, privacy and prestige (being up). Now the order of value goes:
+		- Mid-high floors (5th–10th depending on building)
+		- Higher floors with view
+		- Lower floors
+	- The seller is pricing  incorrectly. **The seller priced it as if it were 2nd floor.**. But is among the biggest walk-ups at 4th floor.
+		- A 230k value property commands at least 30k renovations + ~15k transfer fees + others, pushing the property to ~280k. At this price range you get full luxury in the zone already. With fully functional space. **This property price is serving the seller big time, to the extent of being a service.**
+			- Renovation take the property out of market, has "stress" cost, and time, energy and inconvinience of doing repairs. These all add up.
+	- A monthly pay of 1k would be the most, and it's a **extremly low yield.  This makes the property a capital-lockup **
+	- ### **Below $175k, the conversation changes, but not the nature of the asset.**
+		- It becomes:
+			- ✔ Safer entry price
+			- ✔ Better margin of error
+			- ✔ More protection against downside
+			- ✔️ Probably close to protected by "gross" land value.
+			- ❌ Still friction-heavy
+			- ❌ Still niche buyer pool
+			- ❌ Still low velocity
+		- Secure-but-lazy assets feel comfortable, but they cap default grow. They wont collapse, explode, just ist. But over 10 yers, a better yield option difference from 4.5% to 8% is massive. That difference compounds aggressively.
+- ## The property does not align with the "investment party" goals.
+  collapsed:: true
+	- **Is a safe gamble at best, a capital lock-up by default.**
+	- El objetivo no es comprar para hacer dinero, es guardar el dinero de una manera segura. Dado eso, ese apartamento presenta riesgos. Hay mejores opciones, cosas que ya funcionen de entrada y todo este resuelto sin riesgos
+- ## Conclusion
+	- To make it a worh wile investment, the property must be priced even below $165k, so renovations, sitting without tenant for big periods, or the low yield could be somewhat offset. The nature of the property persist but is downsides are offset due to the extreme low selling value.
+	- A building group effort to retrofit an elevator probably would make this investment be valuable even at 175k, granting the 4th floor pays more for it, plus remodelaciones etc. This is extremely unlikely, as is there is not even gas común, roofed parking lots for all, protected cercas etc....The building is not a community.

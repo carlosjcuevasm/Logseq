@@ -1,32 +1,134 @@
--
-- ## Work Items
+## Work Items - Kanban view
 	- Active items
 	  collapsed:: true
-		- {{query (and [[work-item]] (task TODO LATER) (not (page Templates)))}}
+		- Log {{query (and [[work-item]] (task TODO LATER) (not (page Templates)))}}
 		  query-table:: false
-		-
+		  collapsed:: true
 	- Next
-		- {{query (and [[work-item]] (task NOW))}}
+		- Log {{query (and [[work-item]] (task NOW))}}
+		  collapsed:: true
+	- Working
+		- Log {{query (and [[work-item]] (task DOING "IN-PROGRESS"))}}
+	- Done
+		- Log {{query (and [[work-item]] (task Done))}}
+-
+- ## Work Items - Vertical view
+	- Active items
+	  collapsed:: true
+		- Log {{query (and [[work-item]] (task TODO LATER) (not (page Templates)))}}
+		  collapsed:: true
+	- Next
+		- Log {{query (and [[work-item]] (task NOW))}}
+		  collapsed:: true
 	- Working
 	  collapsed:: true
-		- [[prueba work item]]
-		  #defenses
-		- {{query (and [[work-item]] (task DOING "IN-PROGRESS"))}}
+		- Log {{query (and [[work-item]] (task DOING "IN-PROGRESS"))}}
 	- Done
 	  collapsed:: true
-		- {{query (and [[work-item]] (task DONE))}}
-		  collapsed:: true
+	- Log {{query((and [[work-item]] (task Done)))}}
+	  collapsed:: true
 -
--
-- NEXT hola
-- hola
-  :LOGBOOK:
-  CLOCK: [2026-02-09 Mon 19:34:20]
-  :END:
 - {{query }}
 -
 - # Items Backlog
-	-
+	- /
+	- ## DONE [[I-Gift]] 
+	  :LOGBOOK:
+	  CLOCK: [2026-02-13 Fri 13:01:10]--[2026-02-19 Thu 16:09:26] =>  147:08:16
+	  :END:
+	  #work-item #expression
+		- **Notes**:
+		- **Time Est (hrs):**2
+		- **Succes looks like**:
+		- **Disciplines:**
+		- **More:**
+		  collapsed:: true
+			- **Priority:**
+			- **Cognitive Load:**
+			- **Success:**
+			- **Sprint:**
+	- ## TODO [[WKP-DSP Engineer (via audio)]]
+	  #work-item #work-pack #provision
+		- **Notes:**
+			- Job postings:
+				- Senior Voice & Video Platform DSP Engineer
+				  collapsed:: true
+					- About the job
+					- Redefine the future of customer experiences. One conversation at a time.
+					- At Nextiva, we’re reimagining how businesses connect, bringing together customer experience and team collaboration on a single, conversation centric platform. Powered by AI, driven by human innovation.
+					- Our culture is forward thinking, customer obsessed and built on the belief that meaningful connections drive better business outcomes. Whether it’s through our signature Amazing Service®, the technology we create, or the experiences we cultivate, connection is at the core of who we are.
+					- If you’re ready to collaborate with incredible people, make an impact, and help businesses everywhere deliver truly amazing experiences, this is where you belong.
+					- Build Amazing. Deliver Amazing. Live Amazing. Be Amazing.
+					- Nextiva is building a next-generation voice and video platform to power our Unified Communications (UCaaS) and Contact Center (CCaaS) products. This platform blends open-source components with in-house innovation to deliver carrier-grade quality and 99.999% uptime. We need a Software Engineer to drive development of real-time voice/video services, enhancing call quality and reliability and enabling AI-powered voice features on our unified customer experience (UCXM) platform. You will work on everything from media servers and audio processing to cloud deployment, ensuring our system is scalable, secure, and high performing. We operate with a DevOps culture – engineers own their code from development through production
+					- Key Responsibilities
+					- Develop Core Communication Services: Build and maintain backend services for voice/video calling (signaling servers, call routing logic, media gateways) using SIP and WebRTC. Implement features like call setup, conferencing, transfers, and recording with a focus on efficiency and reliability. 
+					    Enhance Audio Quality (DSP): Implement and tune digital signal processing algorithms for superior call audio. This includes noise suppression, echo cancellation, jitter buffer optimization, and voice activity detection to ensure crystal-clear, uninterrupted communication even on poor networks. 
+					    Optimize Media & Codecs: Work with real-time media streaming (RTP) and various codecs (Opus, G.711, H.264, etc.). Optimize codec configurations and adapt bitrates on the fly based on network conditions to balance quality and bandwidth. 
+					    Integrate Voice AI Features: Embed speech-to-text (ASR) and text-to-speech (TTS) capabilities into the platform. Enable AI voice agents to participate in calls by streaming audio to AI services and injecting synthesized speech responses. Manage conversation flow between humans and AI (handling interruptions, timing responses) to make interactions feel natural. 
+					    Ensure Scalability & Resilience: Design services with a cloud-native approach (microservices, containers) for deployment on Kubernetes. Implement high-availability strategies (clustering, failover) across global data centers so that the platform achieves five-9s uptime with no downtime for maintenance. 
+					    Performance & Reliability Tuning: Continuously profile and improve system performance end-to-end. Minimize call setup times and audio latency through efficient coding (C/C++ for media processing) and system optimizations. 
+					    DevOps & Support: Use CI/CD pipelines to deploy updates safely with zero downtime. Write comprehensive automated tests (unit, integration, load) for your features. Participate in on-call rotation to troubleshoot and resolve production issues in real time, and implement lasting solutions to prevent recurrence. 
+					    Collaboration: Work closely with Product Managers, front-end teams, AI/ML team and with network engineers.
+					- Qualifications
+					- Real-Time Communications: 5+ years of experience developing VoIP or real-time communication systems. Strong knowledge of SIP protocol, WebRTC, and related networking (RTP, NAT traversal). Proven ability to implement call logic and troubleshoot signaling and media issues. 
+					    Audio/DSP Expertise: Hands-on experience with audio processing in real time. Familiarity with noise reduction, echo cancellation, jitter buffers, and other voice QoS techniques. Comfort optimizing or using audio codecs (Opus, G.711, etc.) and improving call quality under varying network conditions. 
+					    Strong Coding Skills: Proficiency in C/C++ for high-performance, multi-threaded systems programming. Experience writing efficient, low-latency code (lock-free structures, memory management). Additionally, skilled with a higher-level language like Go or Java for building microservices and control logic. 
+					    Cloud & Scalability: Experience building and deploying services in a cloud-native environment (Docker, Kubernetes). Knowledge of designing scalable microservices and using cloud infrastructure (AWS, GCP, or Azure) for load balancing, monitoring, and fault tolerance. 
+					    Voice AI Familiarity: Exposure to integrating speech recognition and text-to-speech in applications. You’ve perhaps worked with voice assistants, IVR systems, or call center AI – you understand basic latency/accuracy trade-offs and how to interface with speech APIs/SDKs. 
+					    Security & Compliance: Basic understanding of securing voice communications (TLS, SRTP) and safeguarding customer data (GDPR, HIPAA considerations for call recordings, etc.). Designs solutions with privacy and security best practices in mind. 
+					    DevOps Mindset: Comfortable using CI/CD, infrastructure-as-code, and logging/monitoring tools. Willing to take ownership of code in production – debugging live issues, optimizing resource usage, and responding to incidents. 
+					    Team Player: Excellent collaboration and communication skills. Experience working in Agile teams. Ability to clearly document designs and mentor others. A proactive attitude to problem-solving and an enthusiasm for continuous learning in the fast-evolving communications and AI field.
+					- Nextiva DNA (Core Competencies)
+					- Nextiva’s most successful team members share common traits and behaviors:
+					- Drives Results: Action-oriented with a passion for solving problems. They bring clarity and simplicity to ambiguous situations, challenge the status quo, and ask what can be done differently. They lead and drive change, celebrating success to build more success.
+					    Critical Thinker: Understands the "why" and identifies key drivers, learning from the past. They are fact-based and data-driven, forward-thinking, and see problems a few steps ahead. They provide options, recommendations, and actions, understanding risks and dependencies.
+					    Right Attitude: They are team-oriented, collaborative, competitive, and hate losing. They are resilient, able to bounce back from setbacks, zoom in and out, and get in the trenches to help solve important problems. They cultivate a culture of service, learning, support, and respect, caring for customers and teams.
+					- Total Rewards
+					- Our Total Rewards offerings are designed to allow Nexties to take care of themselves and their families so they can be their best, in and out of the office.
+					- Our compensation packages are tailored to each role and candidate's qualifications. We consider a wide range of factors, including skills, experience, training, and certifications, when determining compensation. We aim to offer competitive salaries or wages that reflect the value you bring to our team. Depending on the position, compensation may include base salary and/or hourly wages, incentives, or bonuses.
+					  Health 🍏 - Multiple health plan options to suit your needs, including medical, dental, vision, and telemedicine coverage 
+					    Insurance 💼 - Life, disability, and supplemental indemnity plans 
+					    Work-Life Balance ⚖️ - Flexible Time Off (FTO) for salaried employees, PTO for hourly employees, Paid Sick Time (PST), paid parental bonding leave, and paid holidays 
+					    Financial Security 💰 - 401(k) with company match, Health Savings Accounts with company contributions, Dependent Care FSA 
+					    Wellness 🤸‍ - Employee Assistance Program and comprehensive wellness initiatives 
+					    Growth 🌱 - Access to ongoing learning and development opportunities and career advancement
+					- At Nextiva, we're committed to supporting our employees' health, well-being, and professional growth. Join us and build a rewarding career!
+					- Nextiva is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. We prohibit discrimination and harassment of any type without regard to race, color, religion, age, sex, national origin, disability status, genetics, protected veteran status, sexual orientation, gender identity or expression, or any other characteristic protected by federal, state or local laws. Nextiva participates in the E-Verify Program where and as required by law. For additional information about E-Verify visit USCIS.
+					- Founded in 2008, Nextiva has grown into a global leader trusted by over 100,000 businesses and 1M+ users worldwide. Headquartered in Scottsdale, Arizona, and with teams across the globe, we're the future of customer experience and team collaboration through our AI-powered, conversation-centric platform.
+					- Want to see what life at Nextiva is all about? Connect with us on Instagram, Instagram MX, YouTube, LinkedIn, and the Nextiva Blog.
+				-
+		- **Succes looks like:**
+		- **Priority:**
+		- **Disciplines:**
+	- ## TODO [[WKI-Expression items core]] 
+	  WorkPack:: [[WKP-]]
+	  #work-item
+		- **Time Est (hrs):** 0.5
+		- **Notes**: bgs
+		- **Succes looks like**:
+		- **Disciplines:**
+		- **More:**
+		  collapsed:: true
+			- **Priority:**
+			- **Cognitive Load:**
+			- **Success:**
+			- **Sprint:**
+	- ## DONE [[WKI-Definir Digital Company, bases]] 
+	  WorkPack:: [[WKP-]]
+	  :LOGBOOK:
+	  CLOCK: [2026-02-10 Tue 16:39:32]--[2026-02-19 Thu 16:08:50] =>  215:29:18
+	  :END:
+	  #work-item #expression
+		- ** Time Est (hrs):** 1
+		- **Notes**:
+		- **Succes looks like**:
+		- **Disciplines:**
+		- **More:**
+		  collapsed:: true
+			- **Priority:**
+			- **Cognitive Load:**
+			- **Success:**
+			- **Sprint:**
 	- ## NOW [[WKI-Better Job postings]]
 	  WorkPack:: [[WKP-Now Contract]] 
 	  :LOGBOOK:
@@ -44,190 +146,13 @@
 			- **Cognitive Load:**
 			- **Success:**
 			- **Sprint:**
-	- ## TODO [[WKI-Media Engineer path]] 
+	- ## TODO [[WKI-Video Streaming Systems Engineer basics]] 
 	  #work-item
 		- **Notes**:
 		  collapsed:: true
 			- Define los succesfull etc
-			- ### 🔧 Media correctness & debugging services (very viable)
-			  
-			  **What companies pay for:**
-			- Playback breaks on some devices
-			- Ads fail to splice correctly
-			- LL-HLS latency spikes
-			- CMAF segments misaligned
-			- DRM weirdness
-			- Encoder → packager mismatch
-			  
-			  **Your service:**
-			  
-			  > 
-			  
-			  “We diagnose and fix streaming playback issues in production.”
-			  
-			  Deliverables:
-			- Packet captures
-			- Manifest audits
-			- fMP4 analysis
-			- Concrete fixes
-			  
-			  Clients:
-			- OTT platforms
-			- FAST channel operators
-			- Sports startups
-			- Ad-tech companies
-			  
-			  This is **high-margin consulting**.
-			- But senior roles are **not about *new* tools**.
-			  
-			  They’re about **deeper layers of the *same* tools**.
-			  
-			  You already *use*:
-			- HLS
-			- FFmpeg
-			- SSAI
-			- Cloud pipelines
-			- Live/VOD stitching
-			- What the job posting hints at is:
-			  
-			  > “Do you understand what happens **inside** these tools when things go wrong?”
-			  
-			  That’s a depth shift, not a direction change.
-			- ### 2. You separated things that are actually one system
-			  
-			  Before:
-			- HLS felt separate from codecs
-			- Manifests felt separate from players
-			- Cloud pipelines felt separate from media internals
-			  
-			  Now you’re seeing:
-			  
-			  ```
-			  Encoder → timestamps → fMP4 → CMAF → manifest → player → ad logic → user experience
-			  ```
-			  
-			  It’s **one continuous system**.
-			  
-			  The job posting wasn’t asking for “new stuff” — it was asking for:
-			  
-			  > 
-			  
-			  Someone who sees *all of this* as a single mental model.
-			  
-			  ---
-			- ### 3. You underestimated how  *natural*  your path already is
-			  
-			  This is the big one.
-			  
-			  You thought:
-			  
-			  > 
-			  
-			  “This role is for *other* people who learned codecs somehow.”
-			  
-			  Reality:
-			- You already work in **streaming**
-			- You already touch **live systems**
-			- You already manipulate **manifests**
-			- You already deal with **timing, alignment, SSAI, and delivery constraints**
-			  
-			  That role is not a different mountain.
-			  
-			  It’s **the same mountain, higher up**.
-			  
-			  You just hadn’t named the next slope.
-			- ## Now let’s answer your actual question
-			- ### _“What things should I learn to be a better Streaming Media Engineer?”_
-			- I’ll rank your options **by ROI**, not by buzzwords.
-			- ---
-			- ## 🔥 #1 Highest ROI: CMAF + HLS/DASH _at painful depth_
-			- You already suspected this — you’re right.
-			- You should **double down here first**.
-			- Not “I know HLS”, but:
-			- ### What to learn _specifically_
-				- fMP4 box structure (`moov`, `moof`, `mdat`, `traf`, `tfdt`, `trun`)
-				- Segment alignment across audio/video
-				- Why misaligned segments break SSAI & players
-				- Partial segments (LL-HLS)
-				- EXT-X-PART, EXT-X-SERVER-CONTROL
-				- Why Apple players behave differently than Android/TVs
-				- Manifest edge cases:
-					- discontinuities
-					- timeline jumps
-					- ad splice boundaries
-					- clock drift
-			- ### What this gives you
-				- You stop being “the manifest person”
-				- You become “the person who understands **why playback breaks**”
-			- 👉 This is **Senior Streaming Engineer energy**.
-			- ---
-			- ## 🔥 #2 Encoders → packagers → players (end-to-end _media_ focus)
-			- You already understand the _system_.
-			- Now you need to understand the **media flow inside it**.
-			- ### Focus areas
-				- FFmpeg beyond CLI flags:
-					- demux → decode → filter → encode → mux
-				- Encoding ladders & ABR tradeoffs
-				- GOP structure and keyframe placement
-				- Latency vs quality decisions
-				- Audio/video sync under stress
-			- You don’t need to write a codec — but you _must_ understand encoder behavior.
-			- ---
-			- ## ⚠️ #3 RTMP / SRT / WebRTC (useful, but secondary)
-			- This is important **only if you want to lean live-first**.
-			- Learn:
-				- RTMP ingest pain points
-				- SRT vs RTMP tradeoffs
-				- WebRTC _conceptually_ (don’t go full signaling server unless needed)
-			- Good knowledge — **not your top gap**.
-			- ---
-			- ## ⚠️ #4 C/C++ encoder code & FFmpeg internals (optional, not mandatory)
-			- Let me be blunt:
-			- > You do **not** need to become a C++ codec engineer to level up meaningfully.
-			- However, **reading** FFmpeg code and:
-				- Understanding how filters are chained
-				- Knowing where timestamps are calculated
-				- Knowing where sync can break
-			- …is very valuable.
-			- **Writing production C++ encoder code is optional** unless you want to specialize deeply.
-			- ---
-			- ## What I’d recommend _for you specifically_ (12–18 month focus)
-			- Based on your background:
-			- ### Phase 1 (3–6 months)
-				- CMAF + LL-HLS deep dive
-				- fMP4 atom inspection
-				- Player debugging (Apple vs Android vs TV)
-				- Packet capture + media inspection workflows
-			- ### Phase 2 (6–12 months)
-				- Build a **live CMAF pipeline** yourself
-				- Introduce failure modes:
-					- clock drift
-					- dropped segments
-					- encoder restarts
-				- Measure latency, sync, recovery
-			- ### Phase 3 (optional specialization)
-				- FFmpeg internals
-				- Hardware encoders
-				- Cost vs quality optimization
-			- ---
-			- ## One important mindset correction (this matters)
-			- You are not “not that profile”.
-			- You are:
-			- > **A streaming platform engineer evolving toward a media-core engineer.**
-			- That’s a _very_ good trajectory.
-			- If you lean into **media internals + playback pain**, your resume will start matching postings like that naturally — without pretending.
-			- ---
-			- ## Final straight answer to your question
-			- If you must choose **one thing** to focus on:
-			- > **CMAF + HLS/DASH at painful, player-breaking detail**
-			- That is the highest leverage move for _you_.
-			- If you want, next I can:
-				- Design a **learning roadmap using projects you already did**
-				- Help you **reframe your resume** to signal deeper media expertise
-				- Or simulate **interview questions** for senior streaming roles
-			- Just tell me what you want next.
-		- **Succes looks like**
-			- **Why**:
+			- Job posting que podria tener supongo
+		- **Succes looks like**:
 		- **Disciplines:**
 		- **More:**
 		  collapsed:: true
@@ -236,11 +161,12 @@
 			- **Cognitive Load:**
 			- **Success:**
 			- **Sprint:**
-	- ## TODO [[WKP-Now Contract]] 
+	- ## NOW [[WKP-Now Contract]] 
 	  :LOGBOOK:
 	  CLOCK: [2026-02-09 Mon 20:05:46]--[2026-02-09 Mon 20:06:01] =>  00:00:15
+	  CLOCK: [2026-02-13 Fri 01:12:34]
 	  :END:
-	  #work-item #work-pack
+	  #work-item #work-pack #provision
 		- **Intent**:
 		  collapsed:: true
 			- **Notes:**
@@ -248,19 +174,18 @@
 		- **Succes looks like:**
 		- **Priority:**
 		- **Disciplines:**
-	- ## NOW [[WKI-CV Fix]] 
+	- ## DONE [[WKI-CV Fix]] 
 	  id:: 698a3bb8-2957-43d0-bef9-4ff866eb22d6
 	  workpack:: [[WKP-Now Contract]]
 	  :LOGBOOK:
-	  CLOCK: [2026-02-09 Mon 20:24:34]
+	  CLOCK: [2026-02-09 Mon 20:24:34]--[2026-03-04 Wed 14:51:22] =>  546:26:48
 	  :END:
 	  #work-item #provision
 		-
-		- **Succes looks like**
+		- **Success looks like**:  I have a resume that best represents my experience and competencies as a strong OTT / Video Streaming Engineer.
 		  collapsed:: true
-			- **Why**:
 		- **Disciplines:**
-		- **Notes**:
+		- **Notes**: This produced "Job listings" stuff... queries to look for. Thus also, "find the gap" to learn and improve expertise based on those.
 		- **More:**
 		  collapsed:: true
 			- **Priority:**
@@ -273,7 +198,7 @@
 	  :LOGBOOK:
 	  CLOCK: [2026-02-09 Mon 20:05:47]--[2026-02-09 Mon 20:06:04] =>  00:00:17
 	  :END:
-	  #work-item
+	  #work-item #provision
 		- **Succes looks like**
 		  collapsed:: true
 			- **Why**:
@@ -311,21 +236,17 @@
 			- **Cognitive Load:**
 			- **Success:**
 			- **Sprint:**
-	- ## TODO [[WKI-Data streaming Learn]] 
-	  WorkPack:: [[WKP-Now Contract]] 
-	  #work-item
+	- ## NOW [[WKP-Data streaming Learn]] 
+	  :LOGBOOK:
+	  CLOCK: [2026-02-19 Thu 16:28:26]
+	  :END:
+	  #work-item #work-pack
+	  #provision
 		- **Succes looks like**
 		  collapsed:: true
 			- **Why**:
 		- **Disciplines:**
 		- **Notes**:
-		- **More:**
-		  collapsed:: true
-			- **Priority:**
-			- **Time Est (hrs):**
-			- **Cognitive Load:**
-			- **Success:**
-			- **Sprint:**
 	- ## TODO [[WKI-Back End review]] 
 	  workpack:: [[WKP-Now Contract]]
 	  id:: 698a3c93-ebcd-42ff-a434-e7d183e09407

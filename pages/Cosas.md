@@ -84,11 +84,11 @@
 	- TODO Etc. #fitness
 - [[Home & city stuff]]
   collapsed:: true
-	- TODO Apartment improvement #home
-	- TODO Apartment cleaning #home
-	- TODO Car maintenance #home
-	- TODO Local errands #home
-	- TODO Etc. #home
+	- TODO Apartment improvement #Home
+	- TODO Apartment cleaning #Home
+	- TODO Car maintenance #Home
+	- TODO Local errands #Home
+	- TODO Etc. #Home
 -
 - [[Food stuff]]
   collapsed:: true
@@ -123,3 +123,7 @@
 	- TODO Key books read #history
 	- TODO History reading #history
 	- TODO Economic trends #history
+-
+-
+-
+-
