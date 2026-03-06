@@ -449,10 +449,7 @@
 -
 - ## Video streaming domains
 	- ---
-	- > Call them **domains** or **aspects**, not layers.
-	  The order is correct but **real systems cross them constantly**.
-	  Video streaming Is a very cross-cutting endevour
-	- **All domains are interconnected**. A streaming system has a **core media pipeline**, and around it sit **support domains** . The numbers are better interpreted as **a map of concerns**, not a progression.
+	- **Video streaming system is a very cross-cutting endeavour****All domains are interconnected**.
 		- Example: building a simple streaming pipeline already touches many domains.
 		  collapsed:: true
 			- ```
@@ -467,162 +464,163 @@
 				- **Observability** (player metrics)
 			- So even a “basic” streaming system spans **5+ domains**.
 		- A streaming system has a **core media pipeline**, and around it sit **support domains** like infrastructure, control/security, and observability. Those domains interact with every step of the pipeline.
-		  collapsed:: true
-			- This realization separates:
-				- **Media flow**
-					- ```
-					  source → compression → packaging → transport → player
-					  ```
-				- **System concerns**
-					- infrastructure
-					- control/security
-					- observability
-			- That’s how most streaming architectures are actually discussed internally.
-			- **Complete streaming system diagram**
+			- old but check, as this is tackled in "pyramid and domains"
 			  collapsed:: true
-				- ```
-				  Infrastructure  
-				        (Cloud, CDN, orchestration, scaling)  
-				                            ↑  
-				                            |  
-				  source → compression → packaging → transport → player  
-				                            |  
-				                            ↓  
-				                   Control / Security  
-				          (DRM, ads, authorization, policies)  
-				                            ↓  
-				                       Observability  
-				            (QoE metrics, logs, telemetry)
-				  ```
-				- Meaning:
-					- **Top:** infrastructure enables the pipeline to scale.
-					- **Bottom:** control/security governs access and monetization.
-					- **Observability:** measures everything.
-			- **The core media pipeline (with typical tools)**
-			  collapsed:: true
-				- ```
-				  source  
-				  (camera, file, mezzanine video)  
-				  OBS, RTMP encoder, capture cards  
-				    ↓  
-				  compression (encode)  
-				  x264 / x265  
-				  NVENC / QuickSync  
-				  FFmpeg  
-				  GStreamer  
-				    ↓  
-				  packaging (segments + manifests)  
-				  HLS / DASH packagers  
-				  Shaka Packager  
-				  FFmpeg  
-				  AWS MediaPackage  
-				    ↓  
-				  transport (delivery protocols)  
-				  HTTP (HLS/DASH)  
-				  WebRTC  
-				  SRT  
-				  RTMP ingest  
-				  CDN delivery  
-				    ↓  
-				  player (decode + playback)  
-				  Shaka Player  
-				  Video.js  
-				  ExoPlayer  
-				  AVPlayer  
-				  Web browsers
-				  ```
-			- **Infrastructure domain (tools)**
-			  collapsed:: true
-				- These run the system at scale.
-				- Typical stack:
-				- ```
-				  cloud platforms  
-				  AWS / GCP / Azure  
-				  orchestration  
-				  Kubernetes  
-				  Docker  
-				  storage  
-				  S3  
-				  GCS  
-				  CDNs  
-				  CloudFront  
-				  Akamai  
-				  Fastly  
-				  Cloudflare  
-				  queues / event systems  
-				  Kafka  
-				  Kinesis  
-				  PubSub
-				  ```
-				- Responsibilities:
-					- scaling
-					- edge delivery
-					- distributed encoding
-					- cache behavior
-			- **Control & security domain (tools)**
-			  collapsed:: true
-				- Controls **who can watch and how content is monetized**.
-				- Typical tooling
-					- ```
-					  DRM  
-					  Widevine  
-					  PlayReady  
-					  FairPlay  
-					  
-					  encryption  
-					  AES-128  
-					  CENC  
-					  SAMPLE-AES  
-					  
-					  ads  
-					  VAST  
-					  VMAP  
-					  SCTE-35  
-					  
-					  authorization  
-					  signed URLs  
-					  JWT tokens  
-					  geo-blocking  
-					  session limits
-					  ```
-				- This domain sits between **packaging, CDN, and player**.
-			- **Observability / QoE domain (tools)**
-			  collapsed:: true
-				- Measures whether streaming works.
-				- Data sources:
-					- ```
-					  player telemetry  
-					  startup time  
-					  buffering events  
-					  bitrate switches  
-					  CDN logs  
-					  cache hits  
-					  latency  
-					  encoder metrics  
-					  frame drops  
-					  encoding speed
-					  ```
-				- Typical tooling:
-					- ```
-					  metrics  
-					  Prometheus  
-					  InfluxDB  
-					  processing  
-					  Kafka  
-					  Flink  
-					  Spark  
-					  visualization  
-					  Grafana  
-					  Datadog  
-					  Looker
-					  ```
-				- If you want to make the model even more realistic, the **player also feeds observability**.
-					- Most streaming companies collect huge volumes of **player-side metrics**.
-					- Example:
+				- This realization separates:
+					- **Media flow**
 						- ```
-						  player → analytics events → telemetry pipeline
+						  source → compression → packaging → transport → player
 						  ```
-				- Key concept: **QoE (Quality of Experience)**.
+					- **System concerns**
+						- infrastructure
+						- control/security
+						- observability
+				- That’s how most streaming architectures are actually discussed internally.
+				- **Complete streaming system diagram**
+				  collapsed:: true
+					- ```
+					  Infrastructure  
+					        (Cloud, CDN, orchestration, scaling)  
+					                            ↑  
+					                            |  
+					  source → compression → packaging → transport → player  
+					                            |  
+					                            ↓  
+					                   Control / Security  
+					          (DRM, ads, authorization, policies)  
+					                            ↓  
+					                       Observability  
+					            (QoE metrics, logs, telemetry)
+					  ```
+					- Meaning:
+						- **Top:** infrastructure enables the pipeline to scale.
+						- **Bottom:** control/security governs access and monetization.
+						- **Observability:** measures everything.
+				- **The core media pipeline (with typical tools)**
+				  collapsed:: true
+					- ```
+					  source  
+					  (camera, file, mezzanine video)  
+					  OBS, RTMP encoder, capture cards  
+					    ↓  
+					  compression (encode)  
+					  x264 / x265  
+					  NVENC / QuickSync  
+					  FFmpeg  
+					  GStreamer  
+					    ↓  
+					  packaging (segments + manifests)  
+					  HLS / DASH packagers  
+					  Shaka Packager  
+					  FFmpeg  
+					  AWS MediaPackage  
+					    ↓  
+					  transport (delivery protocols)  
+					  HTTP (HLS/DASH)  
+					  WebRTC  
+					  SRT  
+					  RTMP ingest  
+					  CDN delivery  
+					    ↓  
+					  player (decode + playback)  
+					  Shaka Player  
+					  Video.js  
+					  ExoPlayer  
+					  AVPlayer  
+					  Web browsers
+					  ```
+				- **Infrastructure domain (tools)**
+				  collapsed:: true
+					- These run the system at scale.
+					- Typical stack:
+					- ```
+					  cloud platforms  
+					  AWS / GCP / Azure  
+					  orchestration  
+					  Kubernetes  
+					  Docker  
+					  storage  
+					  S3  
+					  GCS  
+					  CDNs  
+					  CloudFront  
+					  Akamai  
+					  Fastly  
+					  Cloudflare  
+					  queues / event systems  
+					  Kafka  
+					  Kinesis  
+					  PubSub
+					  ```
+					- Responsibilities:
+						- scaling
+						- edge delivery
+						- distributed encoding
+						- cache behavior
+				- **Control & security domain (tools)**
+				  collapsed:: true
+					- Controls **who can watch and how content is monetized**.
+					- Typical tooling
+						- ```
+						  DRM  
+						  Widevine  
+						  PlayReady  
+						  FairPlay  
+						  
+						  encryption  
+						  AES-128  
+						  CENC  
+						  SAMPLE-AES  
+						  
+						  ads  
+						  VAST  
+						  VMAP  
+						  SCTE-35  
+						  
+						  authorization  
+						  signed URLs  
+						  JWT tokens  
+						  geo-blocking  
+						  session limits
+						  ```
+					- This domain sits between **packaging, CDN, and player**.
+				- **Observability / QoE domain (tools)**
+				  collapsed:: true
+					- Measures whether streaming works.
+					- Data sources:
+						- ```
+						  player telemetry  
+						  startup time  
+						  buffering events  
+						  bitrate switches  
+						  CDN logs  
+						  cache hits  
+						  latency  
+						  encoder metrics  
+						  frame drops  
+						  encoding speed
+						  ```
+					- Typical tooling:
+						- ```
+						  metrics  
+						  Prometheus  
+						  InfluxDB  
+						  processing  
+						  Kafka  
+						  Flink  
+						  Spark  
+						  visualization  
+						  Grafana  
+						  Datadog  
+						  Looker
+						  ```
+					- If you want to make the model even more realistic, the **player also feeds observability**.
+						- Most streaming companies collect huge volumes of **player-side metrics**.
+						- Example:
+							- ```
+							  player → analytics events → telemetry pipeline
+							  ```
+					- Key concept: **QoE (Quality of Experience)**.
 	- ---
 	- **Be connected to Blogs and Conferences.**  
 	  collapsed:: true
@@ -669,7 +667,7 @@
 					- production systems
 					- blogs and talks
 	- ---
-	- ### What actually means "seniority"
+	- ### What actually means "seniority" and systems meaning
 	  collapsed:: true
 		- There are **two kinds of seniority** in fields like video streaming:
 			- 1.  **Deep domain seniority** (expert in one domain). You become senior by mastering a **single domain extremely deeply**.
@@ -680,38 +678,50 @@
 				- Why **DRM license latency (control)** causes **playback failures (observability)**
 	- ---
 	- ### The Video Streaming pyramid and domains
-	  collapsed:: true
-		- New
-			- This model allows you to visualize the "Ripple Effect" of any technical choice
+		- **Current one (valid**)
+			- This model, divided in [**layers** and **domains**]([[Unified Field Theory for Technical Systems]]), allows you to visualize the "Ripple Effect" of any technical choice
 				- > _"If I change the **GOP Structure** (Domain 1 / Layer 2), it impacts the **Segment Alignment** (Domain 2 / Layer 3), which changes the **CDN Cache Hit Ratio** (Domain 5 / Layer 4), ultimately improving the **Rebuffering QoE** (Domain 7 / Layer 5)."_
-			- Yes — they are **complementary models**, not competing ones.
+				- > "The user saw a 'License Error' (**Layer 3**). I traced the telemetry (**Layer 6**) and found a latency spike in our Key Server (**Layer 4**), which was caused by an incorrectly formatted PSSH box in the initialization segment (**Layer 3**)."
+				- Understanding and synthesizing solutions to problems like that requires **systems** understanding thus **cross-cutting** thinking. The model provides the **systems**, **domains** labels, that play into building video streaming platforms.
 			- One describes the **vertical stack of knowledge**, the other describes the **horizontal domains engineers work in**.
-				- **Pyramid = depth / abstraction**
-				- **Domains = functional areas of work**
-			- The clean way to merge them is to say:
-			- > The **Streaming Knowledge Pyramid** shows how the system is layered.
-			- > The **Streaming Domains** describe the **major engineering disciplines operating across those layers**.
-			- Below is the **merged model** (this is the cleanest version you can keep as a reference).
+				- **Pyramid = How the system operates**. The pipeline exist as stacked and /or related layers of **features**. It shows how the system is layered.
+				- **Domains = functional areas of work**. The actual **functionalities** thus demanding **talent** to be **skilled** on them. The **major engineering disciplines operating across those layers to exist**.
 			- ---
-			- # The Streaming Systems Model
-			- ## Two complementary views
-			- ### 1. The Knowledge Pyramid (system layers)
-			- This shows how streaming systems are **built from the bottom up**.
-			- ```
-			  Platform Architecture
-			          (OTT, Live Broadcast, FAST, WebRTC systems)
-			               Infrastructure & Delivery
-			          (CDNs, cloud pipelines, distributed systems)
-			             Media Processing & Packaging
-			         (encoding pipelines, segmentation, manifests)
-			                  Video Compression
-			            (codecs, bitrate control, GOP logic)
-			                   Signals & Pixels
-			            (frames, audio samples, timing)
-			  ```
-			- As you move upward:
-				- problems become **less mathematical**
-				- and more about **distributed systems and architecture**
+			- ## The Streaming Systems Model
+			- ### The System Layers and the Engineering Domains: Two complementary views
+				- ### The Knowledge Pyramid (system layers)
+					- This shows how streaming systems are **built from the bottom up**.
+						- **Measuring and fixing the data**. **_Observability & Intelligence_**
+						  (QoE/QoS, AI-Remediation, Telemetry, Data Pipelines)
+						- **Organizing the data into a service.**. **_Platform Architecture_**
+						  (OTT, Live Broadcast, FAST, WebRTC systems)
+						- **Moving the data**. **_Infrastructure & Delivery_**
+						  (CDNs, Edge-Native, Cloud-Pipelines, Transport)
+						- **Wrapping and protecting the data.** **_Media Processing, Packaging & Security. Governance. _**
+						  (DRM, Manifests, JIT Packaging, Watermarking, Segmentation)
+						- **Shrinking the data**. _**Video Compression**_
+						  (Codecs, Bitrate Control, GOP Logic, Quantization)
+						- **The raw data**.  _**Signals & Pixels**_.
+							- (Frames, Audio Samples, Metadata, Timing, Synchronization)
+					- Patterns that arise as you move upward:
+					    problems become **less mathematical** and more about **distributed systems and architecture**
+						- ### **The Frequency vs. Latency Trade-off**
+						  collapsed:: true
+							- **Bottom (Layers 1-2):** High frequency, ultra-low latency. You are processing **60 frames every second**. If your code takes 17ms to process a frame, you've already failed. This is why you need C++ here.
+							- **Top (Layers 5-6):** Lower frequency, higher latency. A user might start a video once every 20 minutes. A telemetry heartbeat might happen every 10 seconds. You have the "luxury" of using Node.js or Python because you are managing _events_, not _samples_
+						- ### **The Deterministic to Probabilistic Gradient**
+						  collapsed:: true
+							- **Bottom (Layers 1-2):** Everything is **binary and deterministic**. If a single bit in a NAL unit is flipped, the frame is corrupted. The math is absolute.
+							- **Top (Layers 5-6):** Everything is **probabilistic and statistical**. You stop asking "Does this pixel work?" and start asking "What is the 99th percentile for buffering in the Dominican Republic?" You are managing the _chaos_ of the internet rather than the _precision_ of a codec
+						- ### **The "Error Handling" Strategy**
+						  collapsed:: true
+							- **Bottom (Layers 1-3):** You use **Error Concealment**. If data is lost, you "guess" what the missing pixels look like (smearing) to keep the video moving.
+							- **Top (Layers 4-6):** You use **Redundancy & Failover**. If a CDN fails, you don't "guess"—you physically reroute millions of users to a different server (Cloudflare to Akamai).
+						- ### **Technical Complexity vs. Business Context**
+						  collapsed:: true
+							- **Bottom (Layers 1-2):** The problems are **Agnostic**. A motion vector doesn't care if the video is a Hollywood movie or a cat video. The math is the same.
+							- **Top (Layers 5-6):** The problems are **Contextual**. You care about DRM rights, ad-insertion logic, and user churn. You are solving for the _business_ of video, not just the _physics_ of it.
+						-
 			- ---
 			- # 2. The Engineering Domains
 			- These are the **functional disciplines engineers specialize in**.
