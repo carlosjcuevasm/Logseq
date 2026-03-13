@@ -485,7 +485,7 @@
   Aumentar con OTT exp
 - Real-Time Media transport
 -
-- ## The Steeping Stone strategy
+- ## The Steping Stone strategy
   collapsed:: true
 	- ### **(The "Stepping Stone" Strategy)**
 	- If your goal is **$100k+ ($8.5k+/mo)**, you should view this $6.5k offer as a **high-paid residency**.
@@ -736,8 +736,11 @@
 					- **Pyramid = How the system operates**. The pipeline exist as stacked and /or related layers of **features**. It shows how the system is layered.
 					- **Domains = functional areas of work**. The actual **functionalities** thus demanding **talent** to be **skilled** on them. The **major engineering disciplines operating across those layers to exist**.
 			- ---
-			- ## The Streaming Systems Model
+			- ## The Streaming Systems Model/
+				- TODO Move the Topics out of the pyramid layer.
+					- Me di cuenta que, hay practicas que, tocas hasta 3 layers, que solo hacen sentido cuando se entiende las tres, y existiendo en una sola no esta completa en entendimiento. Por eso son disciplinas. Se referencia el modelo, pero el modelo no le pertenecen las disciplinas.
 				- ### The System Layers and the Engineering Domains: Two complementary views
+				  collapsed:: true
 					- ### The Knowledge Pyramid (system layers) 🔺
 						- This shows how streaming systems are **built from the bottom up**. As follows:
 							- **Measuring and fixing the data**. **_Observability & Intelligence_**
@@ -768,6 +771,7 @@
 												- **Output:** Someone clicks "Record" → **Spin up an MCU instance** (Just to create the recording file).
 									- #### Topologies
 										- #### "Handshake & Flow" pattern
+										  collapsed:: true
 											- Is a **Protocol Dance**, whether it’s **WhatsApp**, **Discord**, or a custom **WebRTC** app you build yourself, they almost all follow this two-step "Handshake & Pipe" pattern, implemented based on standards or custom.
 											- #### The Handshake (Signaling)
 												- This is the **"Business Meeting"** before the work starts, done by a middleman, the **Signaling Server**. 
@@ -807,6 +811,7 @@
 														- 1.  **Direct P2P (The Goal):** They try to talk UDP/RTP directly.
 													-
 										- #### Mesh (Peer-to-Peer / No Server)
+										  collapsed:: true
 											- **The Concept:** Everyone sends their video to everyone else. This kills your upload speed if there are more than 3 people.
 												- A middleman simple helps on  making the "handshake" between devices.
 												- If there are 4 people, your laptop opens 3 separate "upload" pipes and 3 "download" pipes.
@@ -818,6 +823,7 @@
 												- **Crypto/Web3:** P2P video chat apps that avoid central servers for censorship resistance.
 												- **The Limit:** Beyond 3–4 people, the "upload" tax becomes too high for most home Wi-Fi and mobile data plans.
 										- #### SFU (Selective Forwarding Unit)
+										  collapsed:: true
 											- **The Concept:**The SFU receives one video stream from you and then **forwards** it to everyone else without changing it. It’s like a smart router for video. It can decide _not_ to send you the high-def stream of a person who isn't talking, which saves your bandwidth.
 												- **The "Smart Router."** You send 1 stream up; the server "clones" it and forwards it to everyone else. It doesn't "look" at the pixels; it just routes the packets. Thus, is routing traffic, **inbound to outbound**  it has big bandwith cost nonetheless.
 													- This is the exact reason why video conferencing is such a difficult business to get into. The **bandwidth cost** of an SFU-based "Media System" is staggering.
@@ -880,6 +886,7 @@
 												- **Gaming & Community:** Discord and Slack Huddles.
 												- **Education:** Large-scale virtual classrooms where 50+ students need to see a teacher in high-def but only small thumbnails of each other.
 										- #### MCU (Multipoint Control Unit)
+										  collapsed:: true
 											- **The Concept:**The server takes everyone’s video, "stitches" them into one single grid image, and sends that one image back. This is heavy work for the server.
 											  collapsed:: true
 												- The "Digital Blender." The server decodes everyone’s video, stitches them into a single "grid" picture, and encodes a new single stream to send back.
@@ -921,6 +928,7 @@
 												- The Server has to "think" and actively make decisions based on bussiness logic. Is not a **static origin** service, but an **active** one, an interactive app.
 									-
 							- **Moving the data**. **_Infrastructure & Delivery_**. **Availability**
+							  collapsed:: true
 							  (CDNs, Edge-Native, Cloud-Pipelines, Transport)
 								- #### The Cloud
 									- The modern reality of "The Cloud." The "server" has evolved from a single humming box in a basement to a distributed **orchestration of microservices**.
@@ -1262,6 +1270,7 @@
 													- **Video Conferencing:** Heavyweight hardware systems like **Polycom** or **Tandberg** (used in corporate boardrooms) used RTP long before Google Meet existed.
 													- **IPTV:** Many "managed" cable TV networks (where the provider owns the fiber line to your house) used RTP because they could guarantee the network quality and didn't need the "buffering" of HTTP.
 										- #### WebRTC
+										  collapsed:: true
 											-
 											- **RTP has no idea how to talk to a web browser or get through a home firewall**.
 												- Before WebRTC, if you wanted to do a video call in a browser, you usually needed a **Plugin** (like Flash or Silverlight).
@@ -1329,7 +1338,13 @@
 													- **STUN:** "Tell me my public ID so I can talk directly to my friend."
 													- **TURN:** "The firewall is too strong; we need a middleman to pass notes."
 													- The result? A sub-200ms connection that works even if you are at a Starbucks and your friend is at an office.
-										- SRT?
+										- #### SRT
+											- The "Modern RTMP"
+											- **SRT (Secure Reliable Transport)** is the 2026 successor to RTMP for "First Mile" ingest (from camera to server).
+												- **RTMP:** Old, based on TCP, gets laggy if the internet flickers.
+												- **SRT:** Based on UDP but with **ARQ (Automatic Repeat Request)**. If a packet is lost, it quickly asks for it again.
+												- **Why it matters for you:** SRT supports **Metadata multiplexing** much better than RTMP. You can send a dedicated "Data Track" alongside your video and audio, making your "Live Shopping" triggers much more reliable.
+										-
 									-
 									-
 									-
@@ -1385,6 +1400,7 @@
 										- **Crucially:** The "Key" never touches the app's code or the computer's memory. It stays inside the hardware chip, which is why you can't just "print screen" a Netflix movie
 										-
 							- **Shrinking the data**. _**Video Compression**_. **Efficiency**
+							  collapsed:: true
 							  (Codecs, Bitrate Control, GOP Logic, Quantization)
 								-
 								- ## Is it just "Transcoding Renditions"?
@@ -2050,6 +2066,192 @@
 								- **Top (Layers 5-6):** The problems are **Contextual**. You care about DRM rights, ad-insertion logic, and user churn. You are solving for the _business_ of video, not just the _physics_ of it.
 							-
 			- ---
+			- ### Timed Metadata
+				- Also known as 
+				  id:: 69b3b40c-2f5c-46f7-8443-f92d54a03804
+					- **Interactive Media Ads (IMA):** The broad category.
+					- **Contextual Overlays:** UI that changes based on video content.
+				- In the world of  video CTA (**Live Shopping**), you are essentially bubbling up from the "Capture" layer, to the "Codec" layer.  Up to the **Application Layer** (the "Buy" button).
+					- Specific signals in the **video stream, now within the packets**, are to **trigger events within the presentation layer**
+				- **Frame-locked** is a desired feure for the ctas.  "Buy Button" is **frame-locked**. If the video is delayed by 10 seconds due to bad internet, the "Post-it Note" (SEI) stays with the exact frame where the creator held up the product.
+				- #### SDI vs. App Capture: The Signaling Shift
+					- **Pro Gear (SDI):** Metadata (like SCTE-104, the older brother of SCTE-35) lives in the **VANC (Vertical Ancillary Data)** space. It’s literally hidden in the "blank" lines of pixels at the top of the video frame that you don't see on TV.
+					- **App Capture (iPhone/Tablet):** There is no VANC in an iPhone. When you tap a button in an app, the "Sync Event" has to be manually tied to a frame. This is where **SEI NAL units** come in.
+					- In 2026, the transition from professional "Baseband" gear (SDI) to "IP-based" mobile apps has fundamentally changed how we handle **Signaling events**, thus **timed metadata**.
+					  collapsed:: true
+						- You are spot on: in the pro world, signaling was "physically" part of the signal. In the app world, we have to "digitally" inject it into the compressed math of the codec.
+							-
+				- ### What is a NAL Unit? VCL vs Non-VCL
+					- #### NAL Units
+					  collapsed:: true
+						- A **NAL unit** is a **"complete unit of information** transmitted over a network.
+						- To understand the difference between a "Packet" and a "NAL Unit," you have to distinguish between **Transport** and **Codec**.
+							- **The Relationship:** * If the NAL unit is small (like a metadata note), one RTP packet carries **one** NAL unit.
+								- If the NAL unit is huge (like a 4K I-Frame), it is split across **multiple** RTP packets.
+								- If the NAL units are tiny, **one** RTP packet can carry many NAL units.
+						- **NAL** stands for **Network Abstraction Layer**. It was invented because video engineers realized that video "math" (pixels) needs to be able to travel over many different things (WiFi, Cables, Satellite).
+							- **The Packet (The Envelope):** This is the **RTP Packet** we discussed earlier. It has the SSRC, Sequence Number, and Timestamp.
+							- **The NAL Unit (The Content):** This is the "Lego Brick" that lives _inside_ the RTP packet’s payload.
+					- #### VCL vs. Non-VCL (The Math vs. The Map)
+					  collapsed:: true
+						- This is the most important distinction for your "Live Shopping" setup.
+						- #### VCL (Video Coding Layer)
+							- "VCL" is the actual compressed video data.
+								- **What it is:** The "Math" that represents the movement, color, and pixels.
+								- **The Job:** To recreate the image on the screen.
+								- **In your system:** This is the heavy stuff that requires the most CPU to decode.
+						- #### Non-VCL (The Metadata/Instructions)
+							- This is where the "Live Shopping" magic happens. These bricks do **not** contain pixels.
+								- **SPS (Sequence Parameter Set):** Tells the player: "I am 1080p, 60fps."
+								- **PPS (Picture Parameter Set):** Tells the player: "I'm using this specific compression math."
+								- **SEI (Supplemental Enhancement Information):** This is the "Post-it Note." **This is where you inject your "Buy Button" triggers.**
+					- ### What is SEI? OBUs? (Timed Metadata messages)
+					  collapsed:: true
+						- **SEI (Supplemental Enhancement Information)** is a specific type of Non-VCL NAL unit. It is a "Post-it Note" that the encoder sticks to a frame.
+						  collapsed:: true
+							- **How it looks:** It’s a hex-encoded block. For SCTE-35, it contains a "Provider Message" that looks like a raw binary string.
+							- **Does it work for AV1/VP9?** Yes! While "SEI" is an H.264/H.265 term, **AV1** has an equivalent called **Metadata OBUs (Open Bitstream Units)**. They do the exact same thing: carry non-visual data (like Buy Buttons or HDR info) inside the video stream.
+							- **Why H.264/RTMP?** Even if the ingest is RTMP, RTMP is just the "Truck." The "Boxes" inside the truck are H.264 NAL units. The SEI note stays stuck to the H.264 frame even as it travels through RTMP or SRT.
+						-
+						- ### Does this work for AV1 and VP9?
+						- While "NAL Unit" is a term specifically from the H.264/H.265 (MPEG) world, **AV1** and **VP9** have the exact same concept, just different names:
+							- **AV1:** Uses **OBUs (Open Bitstream Units)**. Instead of "Non-VCL SEI," it has "Metadata OBUs."
+							- **VP9:** Uses **Frames and Superframes**, with headers that carry "Uncompressed Data Chunks."
+						- The logic is identical: **Separate the "Pixels" from the "Information" so the system can read the info without having to calculate the pixels.**
+					- ### Why care a lot
+						- the core principle of **Network Resilience**. Your intuition is 100% correct: the "smaller" and more "independent" the NAL unit, the safer your live shopping event is.
+						- In the engineering world, we call this **Granularity** and **Error Propagation Control**.
+						-
+						- ### Why "Smaller" is Better for Timing
+						- You mentioned "less packets to accomplish a timed event." Here is why that’s a genius observation:
+							- 1.  **Lower Latency:** Smaller units move through the "Shrinking" and "Packaging" stages faster.
+							- 2.  **MTU Alignment:** A standard internet packet (MTU) is roughly **1,500 bytes**.
+								- If your Metadata NAL unit is **under 1,400 bytes**, it fits in **one** packet.
+								- If it’s **1,600 bytes**, it must be split into **two** packets.
+								- If you lose **one** of those two packets, you lose the **entire** "Buy Button" event.
+							- 3.  **The Odds:** Statistically, it is much easier for a network to deliver one small packet than it is to deliver a "train" of 50 packets perfectly in order.
+						-
+						- ### "The Independence of the Post-it"
+						- Because the NAL unit is a "complete unit of information," the **Ingest Server** can perform what we call **Deep Packet Inspection (DPI)**.
+						- If the network is getting congested, a "Smart SFU" or "Smart Ingest" can actually prioritize the **Non-VCL NAL units** (Metadata and Headers) over the **VCL NAL units** (Pixels).
+							- **The "Graceful Degradation" Strategy:** It’s better to show a slightly blurry video but still have the "Buy Button" appear on time, than to have a 4K crystal-clear video where the interactive features don't work.
+							-
+							- ### How the "NAL Unit Header" identifies the goods
+							- Every NAL unit starts with a header. In H.264, it’s a simple byte where the last 5 bits represent the **NAL Unit Type**.
+							- | **Type** | **Name** | **Purpose in your Marketplace** |
+							  | --- | --- | --- |
+							  | **5** | **IDR Frame** | The "Keyframe"—critical for starting the stream. |
+							  | **1** | **Non-IDR** | Standard pixels—if lost, you get a "glitch." |
+							  | **6** | **SEI** | **The Metadata—Your "Buy Button" lives here.** |
+							  | **7/8** | **SPS/PPS** | The "Instructions"—if these are lost, the video dies. |
+							- The server looks at that "Type 6" label and says, "Save this one at all costs!"
+							-
+						- ### The "All-or-Nothing" Problem
+						- If your "Buy Button" metadata was part of the same NAL unit as the pixels (the VCL), and a single packet was lost in the "Moving Layer" (UDP), the whole unit would be corrupted.
+							- **The Result:** The player wouldn't just lose the "Buy Button"—the video frame would turn into grey mush (pixelation), and the player's decoder would likely throw away the entire unit, metadata and all.
+						- By making the metadata a **separate, small Non-VCL NAL unit**, it gets its own "lifeboat" (RTP packet). Even if the "Pixel" packets right next to it are lost, the metadata packet has a much higher chance of arriving intact because it’s tiny and doesn't rely on the pixel math.
+					-
+				- ### So now you should understand
+					- **Non-VCL SEI NAL Unit**. is a "no video stream realted, H264,265 realted, complete information unit"
+					-
+				-
+				- ### How the "Injection" actually looks (The Bitstream)
+					- When your iPhone app wants to trigger a shopping event, it generates a **Non-VCL SEI NAL Unit**.
+					- The stream looks like this as it travels through RTMP/SRT:
+						- 1.  **NAL Unit 1 (Non-VCL):** "Hi, I'm the SPS. We are doing 1080p."
+						- 2.  **NAL Unit 2 (Non-VCL/SEI):** **"HI! I am a custom message: { 'product_id': 'xyz' }."**
+						- 3.  **NAL Unit 3 (VCL):** "I am the pixels for Frame #100."
+					- When the **Ingest Server** receives this, it sees NAL Unit 2. It ignores the pixels (NAL Unit 3) and extracts the JSON from NAL Unit 2 to create your **SCTE-35** or **HLS DATERANGE** tag.
+				- #### DATERANGE vs. Metadata Tags
+				  collapsed:: true
+					- HLS has a few ways to show this data, and it can be confusing:
+						- **`EXT-X-SCTE35`:** A specific tag for the raw binary SCTE blob.
+						- **`EXT-X-ASSET`:** Usually used for VOD to link to a specific Ad ID or Movie ID.
+						- **`EXT-X-DATERANGE`:** This is the **King of Interactive Video**. It allows you to map a "Time Window" to a "Metadata Payload."
+							- It’s better than other tags because it tells the player: _"From exactly 10:00:01 to 10:00:15, show Product ID 123."_ Even if the user pauses or seeks, the player knows exactly when that metadata is "active."
+			- ### The Browser player
+			  collapsed:: true
+				- The "Orchestrator" is almost always a **Web Environment**, even on a Smart TV. Modern Smart TVs (Samsung Tizen, LG webOS) are essentially **web browsers in a box**.
+				- ### MSE: The Browser's Secret Key
+				  collapsed:: true
+					- **MSE (Media Source Extensions)** is the API that allows JavaScript to act like a "Video Engineer."
+						- **Without MSE:** The browser can only play a simple `.mp4` link.
+						- **With MSE:** Libraries like **hls.js** or **Shaka Player** can grab raw bytes from the network, "transmux" them in real-time, and feed them into the browser's hardware decoder bit-by-bit. This is what allows for **Live** switching, bit-rate changes, and most importantly, **Metadata Extraction**.
+				- ### How Overlays work (The "Orchestrator")
+				  collapsed:: true
+					- You’re right—the "Orchestrator" is almost always a **Web Environment**, even on a Smart TV. Modern Smart TVs (Samsung Tizen, LG webOS) are essentially **web browsers in a box**.
+						- **The Layering:** The TV or Browser doesn't "burn" the button into the video. It uses **CSS Z-Indexing**.
+							- **Layer 0 (Bottom):** The `<video>` element (The "Moving Layer").
+							- **Layer 1 (Top):** The React/Vue Frontend (The "UI Layer").
+						- **The Trigger:** The browser uses **MSE (Media Source Extensions)** to pipe the video into the player. When the player (hls.js) sees the SEI/SCTE metadata, it tells the Frontend: _"Hey, Frame 500 says 'Show Product 123'!"_ and the UI Layer instantly renders the "Buy" button over the video.
+			- ---
+			- reserach backup
+			  collapsed:: true
+				- finish SFU webrtc and stuffs DONE
+				  How overlay, cta, etc work <-
+				  merge commerce?
+				  Review overall flow phone, switcher ai
+				  Review old notion "infrastructure" stuff
+				  Overall look pyramid
+				  Ottera stuff
+				  review pyramid
+				- ===========
+				  Layer 1 2 Singal and Compression
+				- =1=
+				  Metadata Injection (SCTE-35 for Shopping): The "Marketplace" angle means Live Shopping. You need to know how to inject SCTE-35 markers into an HLS or RTMP stream to trigger a "Buy" button overlay on the viewer's screen.
+				- =2=
+				  Codecs
+				  HEVC/H.265 vs H.264: With iOS 18+ support mentioned in their docs, you should discuss the trade-offs of using HEVC for higher quality at lower bitrates, and how you'd manage the CPU/Battery thermal throttling on a phone during a 2-hour stream.
+				- =8=
+				  Clock Sync in Multicam 
+				  Switcher connects up to 9 cameras. In the interview, talk about PTP (Precision Time Protocol) or NTP for synchronizing multiple mobile devices to prevent "frame-drifting" during a live switch.
+				- Layer 3 4 5 Packaging and Transport and Services
+				- Eureka Labs' background is in massive scale (eBay/Naspers). They will grill you on how the video pipeline supports the business.
+				- =9=
+				  The SFU Architecture (Mediasoup): The job description explicitly asks for Mediasoup. Be ready to explain why you'd use an SFU (Selective Forwarding Unit) like Mediasoup for low-latency interactions instead of an MCU.
+				- =7=
+				  WebRTC to HLS/RTMP Bridge: Switcher Studio supports RTMP and HLS. You must be able to describe the architecture of a transmuxer that takes a low-latency WebRTC contribution (from a mobile guest) and "re-packages" it into HLS for 100,000 viewers on a marketplace.
+				- =3.=
+				  Zero-Latency Compositing: Switcher is known for brand overlays and scoreboards. Discuss how you would move the compositing logic from the device (CPU heavy) to the Edge/Cloud using Node.js and FFmpeg to allow "lighter" marketplace integrations.
+				- Marketplace
+				- =3.=
+				  Interactive Overlays: Talk about using WebSockets or gRPC to sync the "Live Video" with the "Marketplace State" (e.g., if an item sells out on Shopify, the video overlay must update in <200ms).
+				- =5=
+				  API Design for Video Assets: Eureka Labs builds "startup studios". They want clean, scalable APIs. Discuss how you’d architect a Video Library Hub using Node.js that manages recordings and metadata for thousands of creators.
+				- =4=
+				  "Observability First": Don't just talk about features. Mention telemetry—how you’d use Prometheus/Grafana to track "Time to First Frame" (TTFF) across the marketplace.
+				- =5=
+				  "Jitter Buffer Resilience": When they ask about mobile streaming issues, talk about how you'd tune the Mediasoup Jitter Buffer to handle 5G network fluctuations during an outdoor live-shopping event.
+				- =6=
+				  "Scalable Egress Cost Optimization": Mention how you use ABR (Adaptive Bitrate) logic to save the company money on CDN costs while maintaining 4K quality for high-value marketplace items.
+				- explain a practical pipeline like: capture → encode → ingest → process/transcode → package → CDN → player, and when you would use RTMP, HLS, or WebRTC in the same system. Since Switcher supports direct platform integrations and custom RTMP, this is central
+				- Switcher has a hosted player / collections / video catalog surface, so be ready to talk about startup time, buffering, bitrate switching, playback failures, and telemetry. Their product is not just “send video”; it is also “deliver a good viewer experience.”
+				- This role is “full-stack,” so think beyond media packets. Know how you would model and discuss: video catalog APIs, collections/playlists, permissions, embeds, account-level access, subscriptions, paywalls, and analytics. Switcher’s public docs show collections, hosted catalogs, gated content, subscriptions, and password protection, which strongly suggests product/backend work around media access and publishing.
+				- f the recruiter mentioned marketplace enhancement, my best read is that it may touch monetization, catalog/collection UX, gated content, subscriptions, live shopping, or commerce-adjacent video flows. Switcher publicly emphasizes creating, hosting, and monetizing live and recorded video, including live selling and Shopify-style commerce flows.
+				- Since the JD mentions cloud, Docker, Terraform, CI/CD, and reliability, be ready to discuss CDN behavior, origin vs edge, scaling media workers, observability, alerting, and failure isolation. This is where your cloud/OTT experience helps most.
+			- reserach wquestions
+			  collapsed:: true
+				- ther is an inherent difference between RTMP,RTP and HLS. The first pair is like "hose like" as they do not show a "history" or view of previous stuff, right? the HLS is like you can entern at a point and go back too, is has like a "tracker" built in. What are the better words to describe this?
+				- in mf4 elementary stream are contained within each m4s file?
+				  even on http2 and having to do multiple request for m4s, is it still faster because of multiplexing? Thus the receiver reconstruc the files?
+				  so 100ms can have all three files info in one trip,
+				- how is http3 supported or implemented? hwo an I use it for an app etc? Is QUIC on by default, how is it quic aware?
+				- why RTMP is not as fast as WebRTC RTP? they both hose, they both one handshake. Is ust one has HEad of line block adn the othe dont.
+				- For a mesh peer to per multiuser setup, what does it means to "If there are 4 people, your laptop opens 3 separate "upload" pipes and 3 "download" pipes." Are they parallel open connections? what open connecitno "or pipe" connection means? it means the latpo would accept data coming to a port? waht is a internet port in a device?
+				- In webrtc, the sdp is part of the signaling? how it goes?
+				  originall y rtp was used to broadcast right? not expecting interactivity.
+				- rtp packets structure
+				  How the RTP devices (not web) did their handshake?
+				  what is turn over tls
+				- what is whip and whep
+				- The Truth: Both TCP and UDP usually go through servers....how come? 
+				  like when I download a file in UDP is a server s
+				- how multiplexing really work?
+				  multiple connecitons but, you said "mixes them together"?
+				  So all go in one connection? why multiple request is beneficial, because each request has a speed limit thus better to parallel?
+				  I understand http2 does this.
+				  BUt with http3 each one is a different conection thus, is video audio or sibtiles get stuck, the others complete etc
+				  Multiplexing is "parallel parking" for data. HTTP/2 brought it to the web, but HTTP/3 (via QUIC) perfected it by making sure one "car" breaking down doesn't cause a massive traffic jam for your video stream
 			- # 2. The Engineering Domains
 			- These are the **functional disciplines engineers specialize in**.
 			- They operate **across the pyramid layers**.
